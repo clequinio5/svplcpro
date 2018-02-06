@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7171623-7DAD-46F8-848F-00923F459CF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SVPLC_Grid.My.MyApplication</StartupObject>
+    <RootNamespace>SVPLC_Grid</RootNamespace>
+    <AssemblyName>SVPLC Pro</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SVPLC Pro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SVPLC Pro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\..\ReoGrid-0.8.5-Build\ReoGrid-0.8.5-Full\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\ReoGrid-0.8.5-Build\ReoGrid-0.8.5-Full\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="unvell.ReoGrid">
+      <HintPath>..\..\..\ReoGrid-0.8.5-Build\ReoGrid-0.8.5-Full\unvell.ReoGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="unvell.ReoGridEditor">
+      <HintPath>..\..\..\ReoGrid-0.8.5-Build\ReoGrid-0.8.5-Full\unvell.ReoGridEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="unvell.ReoScript">
+      <HintPath>..\..\..\ReoGrid-0.8.5-Build\ReoGrid-0.8.5-Full\unvell.ReoScript.dll</HintPath>
+    </Reference>
+    <Reference Include="unvell.ReoScript.EditorLib">
+      <HintPath>..\..\..\ReoGrid-0.8.5-Build\ReoGrid-0.8.5-Full\unvell.ReoScript.EditorLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2 - Class\SPACE\Calendarcolumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\SPACE\CellSPACE.vb" />
+    <Compile Include="2 - Class\TMP\CellTMP1.vb" />
+    <Compile Include="2 - Class\TMP\CellTMP2.vb" />
+    <Compile Include="2 - Class\TMPA\CellTMPA.vb" />
+    <Compile Include="2 - Class\TMP\ColumnCellTMP1.vb" />
+    <Compile Include="2 - Class\SPACE\ColumnCellSPACE.vb" />
+    <Compile Include="2 - Class\TMP\ColumnCellTMP2.vb" />
+    <Compile Include="2 - Class\TMPA\ColumnCellTMPA.vb" />
+    <Compile Include="1 - Form\GENERAL\FormProjet.Designer.vb">
+      <DependentUpon>FormProjet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormProjet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2 - Class\SPACE\DTGSPACE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\TMP\DTGTMP1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\TMP\DTGTMP2.vb" />
+    <Compile Include="2 - Class\TMPA\DTGTMPA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\GENERAL\Entretien.vb" />
+    <Compile Include="1 - Form\TMPA\FormCaracteristiqueProjet.Designer.vb">
+      <DependentUpon>FormCaracteristiqueProjet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\TMPA\FormCaracteristiqueProjet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormEntretien.Designer.vb">
+      <DependentUpon>FormEntretien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormEntretien.vb" />
+    <Compile Include="1 - Form\SPACE\FormNomPhaseSPACE.Designer.vb">
+      <DependentUpon>FormNomPhaseSPACE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\SPACE\FormNomPhaseSPACE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1 - Form\SPACE\FormParcelle.Designer.vb">
+      <DependentUpon>FormParcelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\SPACE\FormParcelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2 - Class\GENERAL\ClassListViewSort.vb" />
+    <Compile Include="1 - Form\TMPA\FormPlanches TMPA.Designer.vb">
+      <DependentUpon>FormPlanches TMPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\TMPA\FormPlanches TMPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormPlante.Designer.vb">
+      <DependentUpon>FormPlante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormPlante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormP.Designer.vb">
+      <DependentUpon>FormP.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormRegleBDD.Designer.vb">
+      <DependentUpon>FormRegleBDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormRegleBDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3 - Module\GENERAL\ModuleBDD.vb" />
+    <Compile Include="3 - Module\GENERAL\ModulePublic.vb" />
+    <Compile Include="3 - Module\SPACE\ModuleSPACE.vb" />
+    <Compile Include="3 - Module\TMP\ModuleTMP.vb" />
+    <Compile Include="3 - Module\TMPA\ModuleTMPA.vb" />
+    <Compile Include="3 - Module\GENERAL\ModuleVariables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormOptions.Designer.vb">
+      <DependentUpon>FormOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1 - Form\GENERAL\FormOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2 - Class\GENERAL\Parcelle.vb" />
+    <Compile Include="2 - Class\GENERAL\Planche.vb" />
+    <Compile Include="2 - Class\GENERAL\Plante.vb" />
+    <Compile Include="2 - Class\GENERAL\Serie.vb" />
+    <Compile Include="2 - Class\SPACE\TabPageSPACE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\TMP\TabPageTMP1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\TMPA\TabPageTMPA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="2 - Class\GENERAL\Tache.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1 - Form\GENERAL\FormProjet.resx">
+      <DependentUpon>FormProjet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\TMPA\FormCaracteristiqueProjet.resx">
+      <DependentUpon>FormCaracteristiqueProjet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\GENERAL\FormEntretien.resx">
+      <DependentUpon>FormEntretien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\SPACE\FormNomPhaseSPACE.resx">
+      <DependentUpon>FormNomPhaseSPACE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\SPACE\FormParcelle.resx">
+      <DependentUpon>FormParcelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\TMPA\FormPlanches TMPA.resx">
+      <DependentUpon>FormPlanches TMPA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\GENERAL\FormPlante.resx">
+      <DependentUpon>FormPlante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\GENERAL\FormP.resx">
+      <DependentUpon>FormP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\GENERAL\FormRegleBDD.resx">
+      <DependentUpon>FormRegleBDD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1 - Form\GENERAL\FormOptions.resx">
+      <DependentUpon>FormOptions.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualiser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1425705403_71014.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Appareil photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone svplc dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Savetrue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Savewrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone svplcpro transp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1 - Form\TMP\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_add_box_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_file_download_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_settings_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_sd_storage_black_24dp.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,119 @@
+﻿Epinard|Betterave|-1|Epinard/Betterave
+Radis|Laitue|1|Radis/Laitue
+Choux|Laitue|1|Choux/Laitue
+Laitue|Choux|1|Laitue/Choux
+Laitue|Concombre|1|Laitue/Concombre
+Oignon|Chicorée|1|Oignon/Chicorée
+Laitue|Poireau|1|Laitue/Poireau
+Choux|Poireau|1|Choux/Poireau
+Poireau|Persil|1|Poireau/Persil
+Poireau|Carotte|1|Poireau/Carotte
+Pois|Choux de Bruxelles|1|Pois/Choux de Bruxelles
+Radis|Mâche|1|Radis/Mâche
+Epinard|Tomate|1|Epinard/Tomate
+Choux|Tomate|1|Choux/Tomate
+Pois|Fenouil|1|Pois/Fenouil
+Betterave|Carotte|-1|Betterave/Carotte
+Betterave|Céleri|-1|Betterave/Céleri
+Aubergine|Fève|-1|Aubergine/Fève
+Aubergine|Pois|-1|Aubergine/Pois
+Aubergine|Haricot|-1|Aubergine/Haricot
+Aubergine|Haricot rame|-1|Aubergine/Haricot rame
+Fève|Aubergine|-1|Fève/Aubergine
+Pois|Aubergine|-1|Pois/Aubergine
+Haricot rame|Aubergine|-1|Haricot rame/Aubergine
+Fève|Ail|1|Fève/Ail
+Ail|Fève|-1|Ail/Fève
+Ail|Pois|-1|Ail/Pois
+Ail|Haricot|-1|Ail/Haricot
+Ail|Haricot rame|-1|Ail/Haricot rame
+Oignon|Fève|-1|Oignon/Fève
+Oignon|Pois|-1|Oignon/Pois
+Oignon|Haricot|-1|Oignon/Haricot
+Oignon|Haricot rame|-1|Oignon/Haricot rame
+Poireau|Fève|-1|Poireau/Fève
+Poireau|Pois|-1|Poireau/Pois
+Poireau|Haricot|-1|Poireau/Haricot
+Poireau|Haricot rame|-1|Poireau/Haricot rame
+Pois|Ail|-1|Pois/Ail
+Haricot|Ail|-1|Haricot/Ail
+Haricot rame|Ail|-1|Haricot rame/Ail
+Fève|Oignon|-1|Fève/Oignon
+Pois|Oignon|-1|Pois/Oignon
+Haricot|Oignon|-1|Haricot/Oignon
+Haricot rame|Oignon|-1|Haricot rame/Oignon
+Fève|Poireau|-1|Fève/Poireau
+Pois|Poireau|-1|Pois/Poireau
+Haricot|Poireau|-1|Haricot/Poireau
+Haricot rame|Poireau|-1|Haricot rame/Poireau
+Asperge|Pois|-1|Asperge/Pois
+Asperge|Fève|-1|Asperge/Fève
+Asperge|Haricot|-1|Asperge/Haricot
+Asperge|Haricot rame|-1|Asperge/Haricot rame
+Pois|Asperge|-1|Pois/Asperge
+Fève|Asperge|-1|Fève/Asperge
+Haricot|Asperge|-1|Haricot/Asperge
+Haricot rame|Asperge|-1|Haricot rame/Asperge
+Carotte|Courge|-1|Carotte/Courge
+Carotte|Epinard|-1|Carotte/Epinard
+Carotte|Oignon|-1|Carotte/Oignon
+Carotte|Pomme de terre|-1|Carotte/Pomme de terre
+Carotte|Haricot rame|-1|Carotte/Haricot rame
+Carotte|Céleri|-1|Carotte/Céleri
+Carotte|Melon|-1|Carotte/Melon
+Carotte|Betterave|-1|Carotte/Betterave
+Céleri|Courge|-1|Céleri/Courge
+Céleri|Melon|-1|Céleri/Melon
+Haricot|Laitue|-1|Haricot/Laitue
+Maïs|Carotte|-1|Maïs/Carotte
+Maïs|Oignon|-1|Maïs/Oignon
+Oignon|Betterave|-1|Oignon/Betterave
+Poireau|Pomme de terre|-1|Poireau/Pomme de terre
+Pomme de terre|Courge|-1|Pomme de terre/Courge
+Pomme de terre|Melon|-1|Pomme de terre/Melon
+Pomme de terre|Carotte|-1|Pomme de terre/Carotte
+Betterave|Tomate|-1|Betterave/Tomate
+Tomate|Citrouille|-1|Tomate/Citrouille
+Tomate|Concombre|-1|Tomate/Concombre
+Tomate|Courge|-1|Tomate/Courge
+Tomate|Cornichon|-1|Tomate/Cornichon
+Tomate|Melon|-1|Tomate/Melon
+Tomate|Potiron|-1|Tomate/Potiron
+Citrouille|Tomate|-1|Citrouille/Tomate
+Concombre|Tomate|-1|Concombre/Tomate
+Courge|Tomate|-1|Courge/Tomate
+Cornichon|Tomate|-1|Cornichon/Tomate
+Melon|Tomate|-1|Melon/Tomate
+Potiron|Tomate|-1|Potiron/Tomate
+Radis|Betterave|1|Radis/Betterave
+Choux|Betterave|1|Choux/Betterave
+Poireau|Carotte|1|Poireau/Carotte
+Carotte|Chicorée|1|Carotte/Chicorée
+Carotte|Haricot|1|Carotte/Haricot
+Epinard|Céleri|1|Epinard/Céleri
+Fève|Céleri|1|Fève/Céleri
+Pois|Céleri|1|Pois/Céleri
+Haricot|Céleri|1|Haricot/Céleri
+Haricot rame|Céleri|1|Haricot rame/Céleri
+Choux de Bruxelles|Mâche|1|Choux de Bruxelles/Mâche
+Choux de Bruxelles|Epinard|1|Choux de Bruxelles/Epinard
+Radis|Choux de Bruxelles|1|Radis/Choux de Bruxelles
+Epinard|Choux de Bruxelles|1|Epinard/Choux de Bruxelles
+Fève|Choux de Bruxelles|1|Fève/Choux de Bruxelles
+Pois|Choux de Bruxelles|1|Pois/Choux de Bruxelles
+Haricot|Choux de Bruxelles|1|Haricot/Choux de Bruxelles
+Haricot rame|Choux de Bruxelles|1|Haricot rame/Choux de Bruxelles
+Epinard|Chou-Fleur|1|Epinard/Chou-Fleur
+Chou-Fleur|Mâche|1|Chou-Fleur/Mâche
+Epinard|Choux|1|Epinard/Choux
+Laitue|Choux|1|Laitue/Choux
+Choux|Mâche|1|Choux/Mâche
+Choux|Radis|1|Choux/Radis
+Fève|Concombre|1|Fève/Concombre
+Fève|Courge|1|Fève/Courge
+Pois|Courge|1|Pois/Courge
+Haricot|Courge|1|Haricot/Courge
+Haricot rame|Courge|1|Haricot rame/Courge
+Ail|Oignon|-1|Ail/Oignon
+Ail|Asperge|1|Ail/Asperge
+Cresson|Salade|-1|Cresson/Salade

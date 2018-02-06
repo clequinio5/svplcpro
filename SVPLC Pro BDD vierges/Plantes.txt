@@ -1,0 +1,106 @@
+﻿Abricotier
+Absinthe
+Ail
+Aneth
+Arroche
+Artichaut
+Asperge
+Aubergine
+Basilic
+Bette à carde
+Betterave
+Bourrache
+Brocoli
+Camomille
+Capucine
+Carotte
+Céleri
+Cerfeuil
+Cerise
+Chardon bleu
+Chicorée
+Chou chinois Tatsoi
+Chou de Bruxelles
+Chou de Chine
+Chou pommé
+Chou rouge
+Chou-Fleur
+Chou-Rave
+Choux non Pommés
+Choux
+Ciboulette
+Citrouille
+Concombre
+Coriandre
+Cornichon
+Cosmos
+Courge
+Courgette
+Cresson
+Echalotte
+Epicéa
+Epinard
+Erable
+Euphorbe
+Fenouil
+Fève
+Fougère
+Fraisier
+Framboisier
+Genêt
+Géranium
+Giroflée
+Groseillier
+Haricot nain
+Haricot rame
+Haricot
+Houx
+Hysope
+Laitue
+Lavande
+Mâche
+Maïs
+Melon
+Menthe
+Molène
+Myosotis
+Navet
+Oeillet d'Inde
+Oignon
+Origan
+Orme
+Ortie
+Panais
+Pêcher
+Persil
+Phacélie
+Piment
+Pissenlit
+Poireau
+Poirier
+Pois
+Poivron
+Pomme de terre
+Pommier
+Potiron
+Radis noir
+Radis
+Raifort
+Rhubarbe
+Romarin
+Rosier
+Rue
+Salade
+Salsifis
+Sarrasin
+Sarriette
+Sauge
+Souci
+Sureau
+Tanaisie
+Thym
+Tomate
+Topinambour
+Tournesol
+Valériane
+Vigne

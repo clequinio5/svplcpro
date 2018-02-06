@@ -1,0 +1,299 @@
+﻿Ail|Asperge|-1|Ail/Asperge
+Ail|Chou|-1|Ail/Chou
+Ail|Haricot|-1|Ail/Haricot
+Ail|Haricot rame|-1|Ail/Haricot rame
+Ail|Pois|-1|Ail/Pois
+Ail|Betterave|1|Ail/Betterave
+Ail|Carotte|1|Ail/Carotte
+Ail|Céleri|1|Ail/Céleri
+Ail|Concombre|1|Ail/Concombre
+Ail|Cornichon|1|Ail/Cornichon
+Ail|Fraisier|1|Ail/Fraisier
+Ail|Laitue|1|Ail/Laitue
+Ail|Tomate|1|Ail/Tomate
+Asperge|Betterave|-1|Asperge/Betterave
+Asperge|Oignon|-1|Asperge/Oignon
+Asperge|Persil|1|Asperge/Persil
+Asperge|Poireau|1|Asperge/Poireau
+Asperge|Pois|1|Asperge/Pois
+Asperge|Tomate|1|Asperge/Tomate
+Aubergine|Oignon|-1|Aubergine/Oignon
+Aubergine|Pomme de terre|-1|Aubergine/Pomme de terre
+Aubergine|Haricot|1|Aubergine/Haricot
+Aubergine|Haricot rame|1|Aubergine/Haricot rame
+Aubergine|Persil|1|Aubergine/Persil
+Aubergine|Piment|1|Aubergine/Piment
+Aubergine|Pois|1|Aubergine/Pois
+Aubergine|Thym|1|Aubergine/Thym
+Aubergine|Tomate|1|Aubergine/Tomate
+Basilic|Chou|1|Basilic/Chou
+Basilic|Haricot|1|Basilic/Haricot
+Basilic|Haricot rame|1|Basilic/Haricot rame
+Basilic|Tomate|1|Basilic/Tomate
+Bette à carde|Oignon|1|Bette à carde/Oignon
+Betterave|Carotte|-1|Betterave/Carotte
+Betterave|Haricot|-1|Betterave/Haricot
+Betterave|Haricot rame|-1|Betterave/Haricot rame
+Betterave|Tomate|-1|Betterave/Tomate
+Betterave|Céleri|1|Betterave/Céleri
+Betterave|Chou|1|Betterave/Chou
+Betterave|Laitue|1|Betterave/Laitue
+Betterave|Oignon|1|Betterave/Oignon
+Betterave|Radis|1|Betterave/Radis
+Brocoli|Fraisier|-1|Brocoli/Fraisier
+Brocoli|Romarin|1|Brocoli/Romarin
+Brocoli|Tomate|1|Brocoli/Tomate
+Carotte|Cerfeuil|1|Carotte/Cerfeuil
+Carotte|Epinard|1|Carotte/Epinard
+Carotte|Laitue|1|Carotte/Laitue
+Carotte|Oignon|1|Carotte/Oignon
+Carotte|Persil|1|Carotte/Persil
+Carotte|Poireau|1|Carotte/Poireau
+Carotte|Pois|1|Carotte/Pois
+Carotte|Radis|1|Carotte/Radis
+Carotte|Romarin|1|Carotte/Romarin
+Carotte|Tomate|1|Carotte/Tomate
+Céleri|Maïs|-1|Céleri/Maïs
+Céleri|Persil|-1|Céleri/Persil
+Céleri|Pomme de terre|-1|Céleri/Pomme de terre
+Céleri|Chou|1|Céleri/Chou
+Céleri|Concombre|1|Céleri/Concombre
+Céleri|Cornichon|1|Céleri/Cornichon
+Céleri|Courge|1|Céleri/Courge
+Céleri|Epinard|1|Céleri/Epinard
+Céleri|Haricot|1|Céleri/Haricot
+Céleri|Haricot rame|1|Céleri/Haricot rame
+Céleri|Piment|1|Céleri/Piment
+Céleri|Pois|1|Céleri/Pois
+Céleri|Radis|1|Céleri/Radis
+Céleri|Tomate|1|Céleri/Tomate
+Chicorée|Chou|-1|Chicorée/Chou
+Chou|Fenouil|-1|Chou/Fenouil
+Chou|Fraisier|-1|Chou/Fraisier
+Chou|Poireau|-1|Chou/Poireau
+Chou|Radis|-1|Chou/Radis
+Chou|Concombre|1|Chou/Concombre
+Chou|Cornichon|1|Chou/Cornichon
+Chou|Fève|1|Chou/Fève
+Chou|Haricot|1|Chou/Haricot
+Chou|Haricot rame|1|Chou/Haricot rame
+Chou|Laitue|1|Chou/Laitue
+Chou|Mâche|1|Chou/Mâche
+Chou|Menthe|1|Chou/Menthe
+Chou|Pois|1|Chou/Pois
+Chou|Pomme de terre|1|Chou/Pomme de terre
+Chou|Romarin|1|Chou/Romarin
+Chou|Thym|1|Chou/Thym
+Chou de Bruxelles|Fraisier|-1|Chou de Bruxelles/Fraisier
+Chou de Bruxelles|Pois|-1|Chou de Bruxelles/Pois
+Chou de Bruxelles|Tomate|-1|Chou de Bruxelles/Tomate
+Chou de Bruxelles|Fève|1|Chou de Bruxelles/Fève
+Chou de Bruxelles|Haricot|1|Chou de Bruxelles/Haricot
+Chou de Bruxelles|Haricot rame|1|Chou de Bruxelles/Haricot rame
+Chou de Bruxelles|Laitue|1|Chou de Bruxelles/Laitue
+Chou de Bruxelles|Menthe|1|Chou de Bruxelles/Menthe
+Chou de Bruxelles|Pomme de terre|1|Chou de Bruxelles/Pomme de terre
+Chou de Bruxelles|Romarin|1|Chou de Bruxelles/Romarin
+Chou-Fleur|Fraisier|-1|Chou-Fleur/Fraisier
+Chou-Fleur|Tomate|-1|Chou-Fleur/Tomate
+Chou-Fleur|Fève|1|Chou-Fleur/Fève
+Chou-Fleur|Haricot|1|Chou-Fleur/Haricot
+Chou-Fleur|Haricot rame|1|Chou-Fleur/Haricot rame
+Chou-Fleur|Menthe|1|Chou-Fleur/Menthe
+Chou-Fleur|Oignon|1|Chou-Fleur/Oignon
+Chou-Fleur|Pomme de terre|1|Chou-Fleur/Pomme de terre
+Chou-Fleur|Radis|1|Chou-Fleur/Radis
+Citrouille|Fève|1|Citrouille/Fève
+Citrouille|Maïs|1|Citrouille/Maïs
+Citrouille|Menthe|1|Citrouille/Menthe
+Citrouille|Radis|1|Citrouille/Radis
+Citrouille|Pomme de terre|-1|Citrouille/Pomme de terre
+Concombre|Melon|-1|Concombre/Melon
+Concombre|Pomme de terre|-1|Concombre/Pomme de terre
+Concombre|Tomate|-1|Concombre/Tomate
+Concombre|Haricot|1|Concombre/Haricot
+Concombre|Haricot rame|1|Concombre/Haricot rame
+Concombre|Laitue|1|Concombre/Laitue
+Concombre|Maïs|1|Concombre/Maïs
+Concombre|Oignon|1|Concombre/Oignon
+Concombre|Pois|1|Concombre/Pois
+Concombre|Tournesol|1|Concombre/Tournesol
+Cornichon|Pomme de terre|-1|Cornichon/Pomme de terre
+Cornichon|Melon|-1|Cornichon/Melon
+Cornichon|Tomate|-1|Cornichon/Tomate
+Cornichon|Haricot|1|Cornichon/Haricot
+Cornichon|Haricot rame|1|Cornichon/Haricot rame
+Cornichon|Laitue|1|Cornichon/Laitue
+Cornichon|Maïs|1|Cornichon/Maïs
+Cornichon|Oignon|1|Cornichon/Oignon
+Cornichon|Pois|1|Cornichon/Pois
+Cornichon|Tournesol|1|Cornichon/Tournesol
+Courge|Pomme de terre|-1|Courge/Pomme de terre
+Courge|Radis|-1|Courge/Radis
+Courge|Laitue|1|Courge/Laitue
+Courge|Maïs|1|Courge/Maïs
+Courge|Melon|1|Courge/Melon
+Epinard|Pomme de terre|-1|Epinard/Pomme de terre
+Epinard|Fève|1|Epinard/Fève
+Epinard|Fraisier|1|Epinard/Fraisier
+Epinard|Haricot|1|Epinard/Haricot
+Epinard|Haricot rame|1|Epinard/Haricot rame
+Epinard|Maïs|1|Epinard/Maïs
+Epinard|Poireau|1|Epinard/Poireau
+Epinard|Radis|1|Epinard/Radis
+Fenouil|Haricot|-1|Fenouil/Haricot
+Fenouil|Haricot rame|-1|Fenouil/Haricot rame
+Fenouil|Pois|-1|Fenouil/Pois
+Fenouil|Tomate|-1|Fenouil/Tomate
+Fève|Pomme de terre|-1|Fève/Pomme de terre
+Fève|Radis|1|Fève/Radis
+Fraisier|Haricot|1|Fraisier/Haricot
+Fraisier|Haricot rame|1|Fraisier/Haricot rame
+Fraisier|Laitue|1|Fraisier/Laitue
+Fraisier|Oignon|1|Fraisier/Oignon
+Fraisier|Poireau|1|Fraisier/Poireau
+Fraisier|Thym|1|Fraisier/Thym
+Haricot|Oignon|-1|Haricot/Oignon
+Haricot|Laitue|1|Haricot/Laitue
+Haricot|Mâche|1|Haricot/Mâche
+Haricot|Pomme de terre|1|Haricot/Pomme de terre
+Haricot rame|Oignon|-1|Haricot rame/Oignon
+Haricot rame|Laitue|1|Haricot rame/Laitue
+Haricot rame|Maïs|1|Haricot rame/Maïs
+Haricot rame|Pomme de terre|1|Haricot rame/Pomme de terre
+Laitue|Persil|-1|Laitue/Persil
+Laitue|Tournesol|-1|Laitue/Tournesol
+Laitue|Oignon|1|Laitue/Oignon
+Laitue|Poireau|1|Laitue/Poireau
+Laitue|Pois|1|Laitue/Pois
+Laitue|Radis|1|Laitue/Radis
+Mâche|Poireau|1|Mâche/Poireau
+Maïs|Menthe|-1|Maïs/Menthe
+Maïs|Romarin|-1|Maïs/Romarin
+Maïs|Pois|1|Maïs/Pois
+Maïs|Tomate|1|Maïs/Tomate
+Melon|Navet|1|Melon/Navet
+Melon|Pois|1|Melon/Pois
+Melon|Radis|1|Melon/Radis
+Melon|Tomate|1|Melon/Tomate
+Menthe|Maïs|-1|Menthe/Maïs
+Menthe|Tournesol|-1|Menthe/Tournesol
+Navet|Pois|1|Navet/Pois
+Navet|Romarin|1|Navet/Romarin
+Oignon|Pois|-1|Oignon/Pois
+Oignon|Pomme de terre|-1|Oignon/Pomme de terre
+Oignon|Poireau|1|Oignon/Poireau
+Oignon|Tomate|1|Oignon/Tomate
+Panais|Radis|1|Panais/Radis
+Persil|Pois|1|Persil/Pois
+Persil|Poireau|1|Persil/Poireau
+Persil|Radis|1|Persil/Radis
+Persil|Tomate|1|Persil/Tomate
+Piment|Tomate|1|Piment/Tomate
+Poireau|Pois|-1|Poireau/Pois
+Poireau|Pomme de terre|1|Poireau/Pomme de terre
+Poireau|Tomate|1|Poireau/Tomate
+Pois|Pomme de terre|1|Pois/Pomme de terre
+Pois|Radis|1|Pois/Radis
+Pomme de terre|Tomate|-1|Pomme de terre/Tomate
+Pomme de terre|Tournesol|-1|Pomme de terre/Tournesol
+Radis|Tomate|1|Radis/Tomate
+Romarin|Thym|1|Romarin/Thym
+Romarin|Tomate|1|Romarin/Tomate
+Framboisier|Myosotis|1|Framboisier/Myosotis
+Capucine|Tomate|1|Capucine/Tomate
+Capucine|Carotte|1|Capucine/Carotte
+Capucine|Chou|1|Capucine/Chou
+Capucine|Chou de Bruxelles|1|Capucine/Chou de Bruxelles
+Capucine|Pomme de terre|1|Capucine/Pomme de terre
+Capucine|Haricot|1|Capucine/Haricot
+Oeillet d'Inde|Tomate|1|Oeillet d'Inde/Tomate
+Carotte|Oeillet d'Inde|1|Carotte/Oeillet d'Inde
+Haricot|Oeillet d'Inde|1|Haricot/Oeillet d'Inde
+Oeillet d'Inde|Poireau|1|Oeillet d'Inde/Poireau
+Oeillet d'Inde|Pomme de terre|1|Oeillet d'Inde/Pomme de terre
+Chou|Oeillet d'Inde|1|Chou/Oeillet d'Inde
+Chou de Bruxelles|Oeillet d'Inde|1|Chou de Bruxelles/Oeillet d'Inde
+Ciboulette|Rosier|1|Ciboulette/Rosier
+Carotte|Laitue|-1|Carotte/Laitue
+Chou|Laitue|-1|Chou/Laitue
+Chou de Bruxelles|Laitue|-1|Chou de Bruxelles/Laitue
+Chou-Fleur|Laitue|-1|Chou-Fleur/Laitue
+Melon|Origan|1|Melon/Origan
+Carotte|Fraisier|1|Carotte/Fraisier
+Pêcher|Tanaisie|1|Pêcher/Tanaisie
+Poirier|Sauge|1|Poirier/Sauge
+Capucine|Ciboulette|1|Capucine/Ciboulette
+Capucine|Pommier|1|Capucine/Pommier
+Capucine|Menthe|1|Capucine/Menthe
+Géranium|Rosier|1|Géranium/Rosier
+Chou|Sauge|1|Chou/Sauge
+Chou de Bruxelles|Sauge|1|Chou de Bruxelles/Sauge
+Chou-Fleur|Sauge|1|Chou-Fleur/Sauge
+Chou|Hysope|1|Chou/Hysope
+Chou de Bruxelles|Hysope|1|Chou de Bruxelles/Hysope
+Chou-Fleur|Hysope|1|Chou-Fleur/Hysope
+Fenouil|Laitue|1|Fenouil/Laitue
+Menthe|Rosier|1|Menthe/Rosier
+Aneth|Concombre|1|Aneth/Concombre
+Asperge|Basilic|1|Asperge/Basilic
+Basilic|Piment|1|Basilic/Piment
+Basilic|Poivron|1|Basilic/Poivron
+Aubergine|Basilic|1|Aubergine/Basilic
+Capucine|Citrouille|1|Capucine/Citrouille
+Capucine|Radis|1|Capucine/Radis
+Capucine|Courge|1|Capucine/Courge
+Haricot rame|Oeillet d'Inde|1|Haricot rame/Oeillet d'Inde
+Chou de Bruxelles|Thym|1|Chou de Bruxelles/Thym
+Chou-Fleur|Thym|1|Chou-Fleur/Thym
+Brocoli|Thym|1|Brocoli/Thym
+Ail|Fève|-1|Ail/Fève
+Absinthe|Fenouil|-1|Absinthe/Fenouil
+Absinthe|Sauge|-1|Absinthe/Sauge
+Artichaut|Fève|-1|Artichaut/Fève
+Basilic|Rue|-1|Basilic/Rue
+Cerfeuil|Radis|-1|Cerfeuil/Radis
+Chou|Oignon|-1|Chou/Oignon
+Chou|Tomate|-1|Chou/Tomate
+Echalotte|Haricot|-1|Echalotte/Haricot
+Echalotte|Haricot rame|-1|Echalotte/Haricot rame
+Echalotte|Pois|-1|Echalotte/Pois
+Echalotte|Fève|-1|Echalotte/Fève
+Framboisier|Pomme de terre|-1|Framboisier/Pomme de terre
+Oignon|Sauge|-1|Oignon/Sauge
+Echalotte|Oignon|-1|Echalotte/Oignon
+Aneth|Carotte|1|Aneth/Carotte
+Chardon bleu|Fraisier|1|Chardon bleu/Fraisier
+Fougère|Fraisier|1|Fougère/Fraisier
+Chou|Cosmos|1|Chou/Cosmos
+Chou de Bruxelles|Cosmos|1|Chou de Bruxelles/Cosmos
+Chou-Fleur|Cosmos|1|Chou-Fleur/Cosmos
+Betterave|Echalotte|1|Betterave/Echalotte
+Echalotte|Fraisier|1|Echalotte/Fraisier
+Echalotte|Laitue|1|Echalotte/Laitue
+Echalotte|Tomate|1|Echalotte/Tomate
+Epicéa|Fraisier|1|Epicéa/Fraisier
+Fraisier|Pin|1|Fraisier/Pin
+Euphorbe|Vigne|-1|Euphorbe/Vigne
+Ciboulette|Fraisier|1|Ciboulette/Fraisier
+Giroflée|Pommier|1|Giroflée/Pommier
+Groseille|Tomate|1|Groseille/Tomate
+Hysope|Vigne|1|Hysope/Vigne
+Origan|Vigne|1|Origan/Vigne
+Orme|Vigne|1|Orme/Vigne
+Ortie|Pêcher|1|Ortie/Pêcher
+Fève|Sarriette|1|Fève/Sarriette
+Haricot rame|Sarriette|1|Haricot rame/Sarriette
+Cerfeuil|Cerise|1|Cerfeuil/Cerise
+Cerise|Chardon bleu|1|Cerise/Chardon bleu
+Cerise|Concombre|-1|Cerise/Concombre
+Cerise|Coriandre|1|Cerise/Coriandre
+Cerise|Chou de Bruxelles|1|Cerise/Chou de Bruxelles
+Cerise|Molène|1|Cerise/Molène
+Cerise|Sarriette|1|Cerise/Sarriette
+Cerise|Thym|1|Cerise/Thym
+Cerise|Concombre|1|Cerise/Concombre
+Cerise|Citrouille|-1|Cerise/Citrouille
+Cerise|Chicorée|1|Cerise/Chicorée
+Cerise|Navet|1|Cerise/Navet
+Cerise|Citrouille|1|Cerise/Citrouille
