@@ -580,7 +580,7 @@ Public Class FormP
     '===============================================================================================================
     '?
     Private Sub AProposToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        MsgBox("Pour toute information, remarque, proposition, etc...n'hésitez pas à envoyer un mail à:" & vbCrLf & vbCrLf & "kikil592@gmail.com")
+        MsgBox("Pour toute information, remarque, proposition, etc...n'hésitez pas à envoyer un mail à:" & vbCrLf & vbCrLf & "XXXXXXXX@gmail.com")
     End Sub
     '==============================================================================================================
     'BDD Plante
