@@ -97,17 +97,17 @@ Public Class TabPageTMPA
             Dim ListOfCell As New List(Of ReoGridCell)
             Dim colstart, linstart, colend, linend As Integer
 
-            With DTGrid.SelectionRange
-                colstart = .StartPos.Col
-                linstart = .StartPos.Row
-                colend = .EndPos.Col
-                linend = .EndPos.Row
-                For i = colstart To colend
-                    For j = linstart To linend
-                        ListOfCell.Add(DTGrid(i, j))
-                    Next
-                Next
-            End With
+            'With DTGrid.SelectionRange
+            '    colstart = .StartPos.Col
+            '    linstart = .StartPos.Row
+            '    colend = .EndPos.Col
+            '    linend = .EndPos.Row
+            '    For i = colstart To colend
+            '        For j = linstart To linend
+            '            ListOfCell.Add(DTGrid(i, j))
+            '        Next
+            '    Next
+            'End With
 
             For Each cell As ReoGridCell In ListOfCell
                 Dim key As Integer = FormP.ImageListPlantes.Images.IndexOfKey(FormP.ListViewPlantes.SelectedItems(0).Text)
