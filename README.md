@@ -19,5 +19,9 @@ Des améliorations envisageables:
   - Remplacer les images standards par des images vectorielles pour permettre un agrandissement de qualité des grilles.
   - Prendre en compte l'ensoleillement des plantes.
 
+# Téléchargement
+
+https://www.logitheque.com/windows/svplc-pro-59566
+
 
 
