@@ -1,107 +1,106 @@
-ï»¿Abricotier|ROSACEES|Arbres fruitiers|Non|De dÃ©but Mars Ã  mi Mars|De dÃ©but Juillet Ã  mi Aout
-Absinthe|ASTERACEES|Aromates et condiments|Oui|De dÃ©but Mars Ã  mi Avril|De dÃ©but Juillet Ã  mi Septembre
-Ail|LILIACEES|LÃ©gume Bulbe|Non|De dÃ©but Octobre Ã  mi Novembre|De dÃ©but Juillet Ã  mi Aout
-Aneth|APIACEES|Aromates et condiments|Non|De dÃ©but Mars Ã  mi Septembre|De dÃ©but Juin Ã  mi Octobre
-Arroche|CHENOPODIACEES|LÃ©gume Feuille|Non|De mi Mars Ã  mi Avril|De mi Avril Ã  mi Septembre
-Artichaut|ASTERACEES|Fleur|Oui|De dÃ©but Janvier Ã  mi Mars|De dÃ©but Juin Ã  mi Septembre
-Asperge|LILIACEES|LÃ©gume Feuille|Non|De dÃ©but Mars Ã  mi Avril|De dÃ©but Avril Ã  dÃ©but Mars
-Aubergine|SOLANACEES|LÃ©gume Fruit|Non|De dÃ©but FÃ©vrier Ã  mi Avril|De dÃ©but Juillet Ã  mi Octobre
-Basilic|LAMIACEES|Aromates et condiments|Non|De mi Avril Ã  dÃ©but Mai|De mi Juin Ã  mi Octobre
-Bette Ã  carde|CHENOPODIACEES|LÃ©gume Feuille|Non|De dÃ©but Avril Ã  mi Mai|De dÃ©but Juillet Ã  mi Octobre
-Betterave|CHENOPODIACEES|LÃ©gume Racine|Non|De dÃ©but Avril Ã  mi Juin|De dÃ©but Juillet Ã  mi Octobre
-Bourrache|BORAGINACEES|Aromates et condiments|Non|De mi FÃ©vrier Ã  mi Juin|De dÃ©but Avril Ã  mi Octobre
-Brocoli|BRASSICACEES|Fleur|Non|De dÃ©but FÃ©vrier Ã  mi Septembre|De dÃ©but Mars Ã  mi FÃ©vrier
-Camomille|ASTERACEES|Fleur|Non|De dÃ©but Mars Ã  mi Mai|De dÃ©but Juillet Ã  mi Septembre
-Capucine|TROPAEOLACEES|Fleur|Non|De dÃ©but Avril Ã  mi Mai|De dÃ©but Juin Ã  mi Juillet
-Carotte|APIACEES|LÃ©gume Racine|Non|De dÃ©but FÃ©vrier Ã  mi Juillet|De dÃ©but Mai Ã  mi Novembre
-CÃ©leri|APIACEES|LÃ©gume Racine|Non|De dÃ©but FÃ©vrier Ã  mi Avril|De dÃ©but Octobre Ã  mi Novembre
-Cerfeuil|APIACEES|Aromates et condiments|Non|De dÃ©but Mars Ã  mi Septembre|De dÃ©but Avril Ã  mi Octobre
-Cerise|ROSACEES|Arbres fruitiers|Non|De dÃ©but Octobre Ã  mi DÃ©cembre|De mi Juillet Ã  mi Juillet
-Chardon bleu|ASTERACEES|Fleur|Oui|De dÃ©but Avril Ã  mi Juillet|De dÃ©but Juillet Ã  mi Aout
-ChicorÃ©e|ASTERACEES|LÃ©gume Feuille|Non|De dÃ©but Avril Ã  mi Septembre|De dÃ©but Novembre Ã  mi Mars
-Chou chinois Tatsoi|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Mars Ã  mi Aout|De dÃ©but Avril Ã  mi Octobre
-Chou de Bruxelles|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Avril Ã  dÃ©but Mai|De dÃ©but Septembre Ã  dÃ©but Avril
-Chou de Chine|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Juillet Ã  mi Aout|De dÃ©but Septembre Ã  mi Novembre
-Chou pommÃ©|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Mars Ã  dÃ©but Septembre|De dÃ©but Avril Ã  dÃ©but DÃ©cembre
-Chou rouge|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Janvier Ã  mi Janvier|De dÃ©but Janvier Ã  mi Janvier
-Chou-Fleur|BRASSICACEES|Fleur|Non|De dÃ©but FÃ©vrier Ã  mi Septembre|De dÃ©but dÃ©but Juin Ã  mi Janvier
-Chou-Rave|BRASSICACEES|LÃ©gume Racine|Non|De dÃ©but Mars Ã  mi Juillet|De dÃ©but Juillet Ã  mi Octobre
-Choux non PommÃ©s|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Avril Ã  dÃ©but Juillet|De dÃ©but DÃ©cembre Ã  dÃ©but Mars
-Choux|BRASSICACEES|LÃ©gume Feuille|Non|De dÃ©but Mai Ã  mi Juin|De dÃ©but Aout Ã  mi Septembre
-Ciboulette|LILIACEES|Aromates et condiments|Oui|De dÃ©but Mars Ã  mi Juin|De dÃ©but Avril Ã  mi Octobre
-Citrouille|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Avril Ã  mi Juin|De dÃ©but Septembre Ã  mi Octobre
-Concombre|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Mai Ã  mi Juin|De dÃ©but Juillet Ã  mi Septembre
-Coriandre|APIACEES|Aromates et condiments|Non|De dÃ©but Avril Ã  mi Septembre|De dÃ©but Juin Ã  mi Octobre
-Cornichon|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Mai Ã  mi Juin|De dÃ©but Juillet Ã  mi Septembre
-Cosmos|ASTERACEES|Fleur|Non|De mi Avril Ã  dÃ©but Avril|De dÃ©but Mai Ã  mi Octobre
-Courge|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Avril Ã  mi Juin|De dÃ©but Septembre Ã  mi Octobre
-Courgette|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Avril Ã  mi Juillet|De dÃ©but Juillet Ã  mi Septembre
-Cresson|BRASSICACEES|LÃ©gume Feuille|Oui|De dÃ©but Avril Ã  mi Aout|De dÃ©but Juin Ã  mi Novembre
-Echalotte|LILIACEES|LÃ©gume Bulbe|Non|De dÃ©but Octobre Ã  mi Avril|De dÃ©but Juillet Ã  mi Aout
-EpicÃ©a|PINACEES|Arbres|Oui|De dÃ©but Novembre Ã  dÃ©but Mars|De dÃ©but Janvier Ã  dÃ©but Janvier
-Epinard|CHENOPODIACEES|LÃ©gume Feuille|Non|De dÃ©but Mars Ã  mi Novembre|De dÃ©but Mars Ã  mi Novembre
-Erable|SAPINDACEES|Arbres|Non|De dÃ©but Novembre Ã  mi Mars|De dÃ©but Novembre Ã  mi Mars
-Euphorbe|EUPHORBIACEES|Arbuste|Oui|De dÃ©but Avril Ã  mi Juin|De dÃ©but Aout Ã  mi Novembre
-Fenouil|APIACEES|LÃ©gume Bulbe|Non|De mi Avril Ã  mi Juin|De dÃ©but Aout Ã  mi Octobre
-FÃ¨ve|FABACEES|LÃ©gume Graine|Non|De mi Mars Ã  dÃ©but Avril|De dÃ©but Juin Ã  dÃ©but Aout
-FougÃ¨re|DENNSTAEDTIACEES|||De dÃ©but Janvier Ã  mi DÃ©cembre|De dÃ©but Janvier Ã  mi DÃ©cembre
-Fraisier|ROSACEES|LÃ©gume Fruit|Oui|De dÃ©but Aout Ã  mi Septembre|De dÃ©but Mai Ã  mi Octobre
-Framboisier|ROSACEES|Arbuste|Oui|De dÃ©but Novembre Ã  mi Mars|De mi Juillet Ã  mi Octobre
-GenÃªt|FABACEES|Arbuste|Non|De dÃ©but Juin Ã  dÃ©but Juillet|De dÃ©but Mai Ã  dÃ©but Juillet
-GÃ©ranium|GERANIACEES|Fleur|Non|De dÃ©but Janvier Ã  dÃ©but Mars|De dÃ©but Aout Ã  dÃ©but Septembre
-GiroflÃ©e|BRASSICACEES|Fleur|Oui|De dÃ©but Avril Ã  dÃ©but Juin|De dÃ©but Avril Ã  dÃ©but Octobre
-Groseillier|GROSSULARIACEES|Arbuste|Oui|De dÃ©but Octobre Ã  mi Novembre|De dÃ©but Juin Ã  mi Aout
-Haricot nain|FABACEES|LÃ©gume Graine|Non|De mi Mai Ã  mi Juillet|De dÃ©but Juillet Ã  mi Septembre
-Haricot rame|FABACEES|LÃ©gume Graine|Non|De mi Mai Ã  mi Juillet|De dÃ©but Juillet Ã  mi Septembre
-Haricot|FABACEES|LÃ©gume Graine|Non|De mi Mai Ã  mi Juillet|De dÃ©but Juillet Ã  dÃ©but Aout
-Houx|AQUIFOLIACEES|Arbuste|Oui|De dÃ©but Mars Ã  mi Mai|De dÃ©but Mai Ã  mi Mai
-Hysope|LAMIACEES|Arbuste|Oui|De dÃ©but Mars Ã  mi Mai|De dÃ©but Juin Ã  mi Octobre
-Laitue|ASTERACEES|LÃ©gume Feuille|Non|De dÃ©but Mars Ã  mi Septembre|De dÃ©but Janvier Ã  mi DÃ©cembre
-Lavande|LAMIACEES|Fleur|Oui|De dÃ©but Mars Ã  mi Mai|De dÃ©but Mai Ã  mi Aout
-MÃ¢che|VALERIANACEES|LÃ©gume Feuille|Non|De dÃ©but Juillet Ã  dÃ©but Octobre|De dÃ©but Septembre Ã  dÃ©but Avril
-MÃ¢che|VALERIANACEES|LÃ©gume Feuille|Non|De mi Juillet Ã  dÃ©but Septembre|De mi Octobre Ã  dÃ©but Mars
-MaÃ¯s|POACEES|LÃ©gume Graine|Non|De dÃ©but Avril Ã  mi Juin|De dÃ©but Octobre Ã  mi Novembre
-Melon|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Mars Ã  mi Juin|De mi Juillet Ã  dÃ©but Septembre
-Menthe|LAMIACEES|Aromates et condiments|Oui|De dÃ©but Avril Ã  mi Juin|De dÃ©but Mai Ã  mi Novembre
-MolÃ¨ne|SCROPHULARIACEES|Fleur|Non|De dÃ©but Avril Ã  mi Juin|De dÃ©but Juin Ã  mi Aout
-Myosotis|BORAGINACEES|Fleur|Oui|De dÃ©but Juin Ã  dÃ©but Aout|De dÃ©but Mars Ã  mi Juin
-Navet|BRASSICACEES|LÃ©gume Racine|Non|De dÃ©but Mars Ã  mi Juillet|De dÃ©but Juillet Ã  mi Novembre
-Oeillet d'Inde|ASTERACEES|Fleur|Non|De dÃ©but FÃ©vrier Ã  mi Mars|De dÃ©but Mai Ã  mi Septembre
-Oignon|LILIACEES|LÃ©gume Bulbe|Non|De dÃ©but Aout Ã  mi Septembre|De dÃ©but Avril Ã  mi Aout
-Origan|LAMIACEES|Aromates et condiments|Oui|De dÃ©but Mars Ã  dÃ©but Avril|De dÃ©but Mai Ã  mi Novembre
-Orme|ULMACEES|Arbres|Non|De dÃ©but Septembre Ã  mi Octobre|De dÃ©but Janvier Ã  mi DÃ©cembre
-Ortie|URTICACEES|Fleur|Oui|De dÃ©but Mars Ã  mi Avril|De dÃ©but Juin Ã  mi Octobre
-Panais|APIACEES|LÃ©gume Racine|Non|De dÃ©but FÃ©vrier Ã  mi Juin|De dÃ©but Octobre Ã  mi Mars
-PÃªcher|ROSACEES|Arbres|Non|De dÃ©but Septembre Ã  mi Novembre|De dÃ©but Juillet Ã  dÃ©but Aout
-Persil|APIACEES|Aromates et condiments|Non|De dÃ©but FÃ©vrier Ã  mi Juin|De dÃ©but Janvier Ã  mi DÃ©cembre
-PhacÃ©lie|HYDROPHYLACEES|Fleur|Non|De dÃ©but Mars Ã  dÃ©but Juin|De dÃ©but Septembre Ã  dÃ©but Octobre
-Piment|SOLANACEES|LÃ©gume Fruit|Non|De dÃ©but FÃ©vrier Ã  mi Avril|De dÃ©but Aout Ã  mi Octobre
-Pissenlit|ASTERACEES|Fleur|Oui|De dÃ©but Mars Ã  mi Juin|De dÃ©but Juin Ã  mi DÃ©cembre
-Poireau|LILIACEES|LÃ©gume Feuille|Non|De dÃ©but FÃ©vrier Ã  mi Avril|De dÃ©but Aout Ã  mi DÃ©cembre
-Poirier|ROSACEES|Arbres fruitiers|Non|De dÃ©but Mars Ã  mi Avril|De dÃ©but Aout Ã  mi Aout
-Pois|FABACEES|LÃ©gume Graine|Non|De dÃ©but FÃ©vrier Ã  mi Juin|De dÃ©but Juin Ã  mi Aout
-Poivron|SOLANACEES|LÃ©gume Fruit|Non|De dÃ©but FÃ©vrier Ã  mi Avril|De dÃ©but Aout Ã  mi Octobre
-Pomme de terre|SOLANACEES|LÃ©gume Racine|Oui|De dÃ©but Mars Ã  mi Mai|De dÃ©but Juin Ã  mi Septembre
-Pommier|ROSACEES|Arbres fruitiers|Non|De dÃ©but Septembre Ã  dÃ©but Octobre|De dÃ©but Aout Ã  mi Novembre
-Potiron|CUCURBITACEES|LÃ©gume Fruit|Non|De dÃ©but Mai Ã  mi Juin|De dÃ©but Octobre Ã  dÃ©but Novembre
-Radis noir|BRASSICACEES|LÃ©gume Racine|Non|De dÃ©but Juin Ã  mi Aout|De dÃ©but Octobre Ã  mi Novembre
-Radis|BRASSICACEES|LÃ©gume Racine|Non|De mi FÃ©vrier Ã  dÃ©but Septembre|De dÃ©but Avril Ã  mi Octobre
-Raifort|BRASSICACEES|LÃ©gume Racine|Non|De dÃ©but Mars Ã  mi Avril|De dÃ©but Septembre Ã  mi DÃ©cembre
-Rhubarbe|POLYGONACEES|LÃ©gume Feuille|Oui|De dÃ©but Mars Ã  mi Avril|De dÃ©but Mai Ã  mi Octobre
-Romarin|LAMIACEES|Aromates et condiments|Oui|De dÃ©but Mars Ã  mi Octobre|De dÃ©but Mars Ã  mi FÃ©vrier
-Rosier|ROSACEES|Fleur|Oui|De dÃ©but Novembre Ã  mi Avril|De dÃ©but Mars Ã  mi Octobre
-Rue|RUTACEES|Arbuste|Oui|De dÃ©but Avril Ã  mi Mai|De dÃ©but Mai Ã  mi Octobre
-Salade|ASTERACEES|LÃ©gume Feuille|Non|De dÃ©but Mars Ã  mi Juin|De dÃ©but Mai Ã  mi Octobre
-Salsifis|ASTERACEES|LÃ©gume Racine|Non|De dÃ©but Mars Ã  mi Juin|De dÃ©but Novembre Ã  mi Mars
-Sarrasin|POLYGONACEES|Fleur|Non|De dÃ©but Avril Ã  mi Juin|De dÃ©but Septembre Ã  mi Septembre
-Sarriette|LAMIACEES|Aromates et condiments|Non|De mi Avril Ã  mi Mai|De dÃ©but Mars Ã  mi FÃ©vrier
-Sauge|LAMIACEES|Aromates et condiments|Oui|De dÃ©but Octobre Ã  dÃ©but Mai|De mi Mars Ã  mi Aout
-Souci|ASTERACEES|Fleur|Non|De dÃ©but Mars Ã  mi Juin|De dÃ©but Avril Ã  mi Octobre
-Sureau|CAPRIFOLIACEES|Arbuste|Non|De dÃ©but Mai Ã  mi Octobre|De dÃ©but Mars Ã  mi Juin
-Tanaisie|ASTERACEES|Aromates et condiments|Oui|De dÃ©but Avril Ã  mi Juin|De dÃ©but Septembre Ã  mi Octobre
-Thym|LAMIACEES|Aromates et condiments|Oui|De dÃ©but Mars Ã  mi Mai|De dÃ©but Mars Ã  dÃ©but Mai
-Tomate|SOLANACEES|LÃ©gume Fruit|Non|De dÃ©but FÃ©vrier Ã  mi Avril|De dÃ©but Juillet Ã  mi Octobre
-Topinambour|ASTERACEES|LÃ©gume Racine|Oui|De dÃ©but Mars Ã  mi Avril|De dÃ©but Novembre Ã  mi Mars
-Tournesol|ASTERACEES|Fleur|Non|De mi Avril Ã  dÃ©but Avril|De dÃ©but Septembre Ã  mi Octobre
-ValÃ©riane|VALERIANACEES|Fleur|Oui|De mi Aout Ã  dÃ©but Septembre|De dÃ©but Mai Ã  dÃ©but Aout
-Vigne|VITACEES|Arbres fruitiers|Non|De dÃ©but Janvier Ã  mi DÃ©cembre|De dÃ©but Septembre Ã  mi Octobre
+Abricotier|Commun|LaBonneGraine|ROSACEES|Arbres fruitiers|Non|De début Mars à mi Mars|De début Juillet à mi Aout
+Absinthe|Commun|LaBonneGraine|ASTERACEES|Aromates et condiments|Oui|De début Mars à mi Avril|De début Juillet à mi Septembre
+Ail|Commun|LaBonneGraine|LILIACEES|Légume Bulbe|Non|De début Octobre à mi Novembre|De début Juillet à mi Aout
+Aneth|Commun|LaBonneGraine|APIACEES|Aromates et condiments|Non|De début Mars à mi Septembre|De début Juin à mi Octobre
+Arroche|Commun|LaBonneGraine|CHENOPODIACEES|Légume Feuille|Non|De mi Mars à mi Avril|De mi Avril à mi Septembre
+Artichaut|Commun|LaBonneGraine|ASTERACEES|Fleur|Oui|De début Janvier à mi Mars|De début Juin à mi Septembre
+Asperge|Commun|LaBonneGraine|LILIACEES|Légume Feuille|Non|De début Mars à mi Avril|De début Avril à début Mars
+Aubergine|Commun|LaBonneGraine|SOLANACEES|Légume Fruit|Non|De début Février à mi Avril|De début Juillet à mi Octobre
+Basilic|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Non|De mi Avril à début Mai|De mi Juin à mi Octobre
+Bette à carde|Commun|LaBonneGraine|CHENOPODIACEES|Légume Feuille|Non|De début Avril à mi Mai|De début Juillet à mi Octobre
+Betterave|Commun|LaBonneGraine|CHENOPODIACEES|Légume Racine|Non|De début Avril à mi Juin|De début Juillet à mi Octobre
+Bourrache|Commun|LaBonneGraine|BORAGINACEES|Aromates et condiments|Non|De mi Février à mi Juin|De début Avril à mi Octobre
+Brocoli|Commun|LaBonneGraine|BRASSICACEES|Fleur|Non|De début Février à mi Septembre|De début Mars à mi Février
+Camomille|Commun|LaBonneGraine|ASTERACEES|Fleur|Non|De début Mars à mi Mai|De début Juillet à mi Septembre
+Capucine|Commun|LaBonneGraine|TROPAEOLACEES|Fleur|Non|De début Avril à mi Mai|De début Juin à mi Juillet
+Carotte|Commun|LaBonneGraine|APIACEES|Légume Racine|Non|De début Février à mi Juillet|De début Mai à mi Novembre
+Céleri|Commun|LaBonneGraine|APIACEES|Légume Racine|Non|De début Février à mi Avril|De début Octobre à mi Novembre
+Cerfeuil|Commun|LaBonneGraine|APIACEES|Aromates et condiments|Non|De début Mars à mi Septembre|De début Avril à mi Octobre
+Cerise|Commun|LaBonneGraine|ROSACEES|Arbres fruitiers|Non|De début Octobre à mi Décembre|De mi Juillet à mi Juillet
+Chardon bleu|Commun|LaBonneGraine|ASTERACEES|Fleur|Oui|De début Avril à mi Juillet|De début Juillet à mi Aout
+Chicorée|Commun|LaBonneGraine|ASTERACEES|Légume Feuille|Non|De début Avril à mi Septembre|De début Novembre à mi Mars
+Chou chinois Tatsoi|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Mars à mi Aout|De début Avril à mi Octobre
+Chou de Bruxelles|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Avril à début Mai|De début Septembre à début Avril
+Chou de Chine|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Juillet à mi Aout|De début Septembre à mi Novembre
+Chou pommé|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Mars à début Septembre|De début Avril à début Décembre
+Chou rouge|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Janvier à mi Janvier|De début Janvier à mi Janvier
+Chou-Fleur|Commun|LaBonneGraine|BRASSICACEES|Fleur|Non|De début Février à mi Septembre|De début début Juin à mi Janvier
+Chou-Rave|Commun|LaBonneGraine|BRASSICACEES|Légume Racine|Non|De début Mars à mi Juillet|De début Juillet à mi Octobre
+Choux non Pommés|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Avril à début Juillet|De début Décembre à début Mars
+Choux|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Non|De début Mai à mi Juin|De début Aout à mi Septembre
+Ciboulette|Commun|LaBonneGraine|LILIACEES|Aromates et condiments|Oui|De début Mars à mi Juin|De début Avril à mi Octobre
+Citrouille|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Avril à mi Juin|De début Septembre à mi Octobre
+Concombre|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Mai à mi Juin|De début Juillet à mi Septembre
+Coriandre|Commun|LaBonneGraine|APIACEES|Aromates et condiments|Non|De début Avril à mi Septembre|De début Juin à mi Octobre
+Cornichon|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Mai à mi Juin|De début Juillet à mi Septembre
+Cosmos|Commun|LaBonneGraine|ASTERACEES|Fleur|Non|De mi Avril à début Avril|De début Mai à mi Octobre
+Courge|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Avril à mi Juin|De début Septembre à mi Octobre
+Courgette|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Avril à mi Juillet|De début Juillet à mi Septembre
+Cresson|Commun|LaBonneGraine|BRASSICACEES|Légume Feuille|Oui|De début Avril à mi Aout|De début Juin à mi Novembre
+Echalotte|Commun|LaBonneGraine|LILIACEES|Légume Bulbe|Non|De début Octobre à mi Avril|De début Juillet à mi Aout
+Epicéa|Commun|LaBonneGraine|PINACEES|Arbres|Oui|De début Novembre à début Mars|De début Janvier à début Janvier
+Epinard|Commun|LaBonneGraine|CHENOPODIACEES|Légume Feuille|Non|De début Mars à mi Novembre|De début Mars à mi Novembre
+Erable|Commun|LaBonneGraine|SAPINDACEES|Arbres|Non|De début Novembre à mi Mars|De début Novembre à mi Mars
+Euphorbe|Commun|LaBonneGraine|EUPHORBIACEES|Arbuste|Oui|De début Avril à mi Juin|De début Aout à mi Novembre
+Fenouil|Commun|LaBonneGraine|APIACEES|Légume Bulbe|Non|De mi Avril à mi Juin|De début Aout à mi Octobre
+Fève|Commun|LaBonneGraine|FABACEES|Légume Graine|Non|De mi Mars à début Avril|De début Juin à début Aout
+Fougère|Commun|LaBonneGraine|DENNSTAEDTIACEES|||De début Janvier à mi Décembre|De début Janvier à mi Décembre
+Fraisier|Commun|LaBonneGraine|ROSACEES|Légume Fruit|Oui|De début Aout à mi Septembre|De début Mai à mi Octobre
+Framboisier|Commun|LaBonneGraine|ROSACEES|Arbuste|Oui|De début Novembre à mi Mars|De mi Juillet à mi Octobre
+Genêt|Commun|LaBonneGraine|FABACEES|Arbuste|Non|De début Juin à début Juillet|De début Mai à début Juillet
+Géranium|Commun|LaBonneGraine|GERANIACEES|Fleur|Non|De début Janvier à début Mars|De début Aout à début Septembre
+Giroflée|Commun|LaBonneGraine|BRASSICACEES|Fleur|Oui|De début Avril à début Juin|De début Avril à début Octobre
+Groseillier|Commun|LaBonneGraine|GROSSULARIACEES|Arbuste|Oui|De début Octobre à mi Novembre|De début Juin à mi Aout
+Haricot nain|Commun|LaBonneGraine|FABACEES|Légume Graine|Non|De mi Mai à mi Juillet|De début Juillet à mi Septembre
+Haricot rame|Commun|LaBonneGraine|FABACEES|Légume Graine|Non|De mi Mai à mi Juillet|De début Juillet à mi Septembre
+Haricot|Commun|LaBonneGraine|FABACEES|Légume Graine|Non|De mi Mai à mi Juillet|De début Juillet à début Aout
+Houx|Commun|LaBonneGraine|AQUIFOLIACEES|Arbuste|Oui|De début Mars à mi Mai|De début Mai à mi Mai
+Hysope|Commun|LaBonneGraine|LAMIACEES|Arbuste|Oui|De début Mars à mi Mai|De début Juin à mi Octobre
+Laitue|Commun|LaBonneGraine|ASTERACEES|Légume Feuille|Non|De début Mars à mi Septembre|De début Janvier à mi Décembre
+Lavande|Commun|LaBonneGraine|LAMIACEES|Fleur|Oui|De début Mars à mi Mai|De début Mai à mi Aout
+Mâche|Commun|LaBonneGraine|VALERIANACEES|Légume Feuille|Non|De début Juillet à début Octobre|De début Septembre à début Avril
+Maïs|Commun|LaBonneGraine|POACEES|Légume Graine|Non|De début Avril à mi Juin|De début Octobre à mi Novembre
+Melon|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Mars à mi Juin|De mi Juillet à début Septembre
+Menthe|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Oui|De début Avril à mi Juin|De début Mai à mi Novembre
+Molène|Commun|LaBonneGraine|SCROPHULARIACEES|Fleur|Non|De début Avril à mi Juin|De début Juin à mi Aout
+Myosotis|Commun|LaBonneGraine|BORAGINACEES|Fleur|Oui|De début Juin à début Aout|De début Mars à mi Juin
+Navet|Commun|LaBonneGraine|BRASSICACEES|Légume Racine|Non|De début Mars à mi Juillet|De début Juillet à mi Novembre
+Oeillet d'Inde|Commun|LaBonneGraine|ASTERACEES|Fleur|Non|De début Février à mi Mars|De début Mai à mi Septembre
+Oignon|Commun|LaBonneGraine|LILIACEES|Légume Bulbe|Non|De début Aout à mi Septembre|De début Avril à mi Aout
+Origan|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Oui|De début Mars à début Avril|De début Mai à mi Novembre
+Orme|Commun|LaBonneGraine|ULMACEES|Arbres|Non|De début Septembre à mi Octobre|De début Janvier à mi Décembre
+Ortie|Commun|LaBonneGraine|URTICACEES|Fleur|Oui|De début Mars à mi Avril|De début Juin à mi Octobre
+Panais|Commun|LaBonneGraine|APIACEES|Légume Racine|Non|De début Février à mi Juin|De début Octobre à mi Mars
+Pêcher|Commun|LaBonneGraine|ROSACEES|Arbres|Non|De début Septembre à mi Novembre|De début Juillet à début Aout
+Persil|Commun|LaBonneGraine|APIACEES|Aromates et condiments|Non|De début Février à mi Juin|De début Janvier à mi Décembre
+Phacélie|Commun|LaBonneGraine|HYDROPHYLACEES|Fleur|Non|De début Mars à début Juin|De début Septembre à début Octobre
+Piment|Commun|LaBonneGraine|SOLANACEES|Légume Fruit|Non|De début Février à mi Avril|De début Aout à mi Octobre
+Pissenlit|Commun|LaBonneGraine|ASTERACEES|Fleur|Oui|De début Mars à mi Juin|De début Juin à mi Décembre
+Poireau|Commun|LaBonneGraine|LILIACEES|Légume Feuille|Non|De début Février à mi Avril|De début Aout à mi Décembre
+Poirier|Commun|LaBonneGraine|ROSACEES|Arbres fruitiers|Non|De début Mars à mi Avril|De début Aout à mi Aout
+Pois|Commun|LaBonneGraine|FABACEES|Légume Graine|Non|De début Février à mi Juin|De début Juin à mi Aout
+Poivron|Commun|LaBonneGraine|SOLANACEES|Légume Fruit|Non|De début Février à mi Avril|De début Aout à mi Octobre
+Pomme de terre|Commun|LaBonneGraine|SOLANACEES|Légume Racine|Oui|De début Mars à mi Mai|De début Juin à mi Septembre
+Pommier|Commun|LaBonneGraine|ROSACEES|Arbres fruitiers|Non|De début Septembre à début Octobre|De début Aout à mi Novembre
+Potiron|Commun|LaBonneGraine|CUCURBITACEES|Légume Fruit|Non|De début Mai à mi Juin|De début Octobre à début Novembre
+Radis noir|Commun|LaBonneGraine|BRASSICACEES|Légume Racine|Non|De début Juin à mi Aout|De début Octobre à mi Novembre
+Radis|Commun|LaBonneGraine|BRASSICACEES|Légume Racine|Non|De mi Février à début Septembre|De début Avril à mi Octobre
+Raifort|Commun|LaBonneGraine|BRASSICACEES|Légume Racine|Non|De début Mars à mi Avril|De début Septembre à mi Décembre
+Rhubarbe|Commun|LaBonneGraine|POLYGONACEES|Légume Feuille|Oui|De début Mars à mi Avril|De début Mai à mi Octobre
+Romarin|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Oui|De début Mars à mi Octobre|De début Mars à mi Février
+Rosier|Commun|LaBonneGraine|ROSACEES|Fleur|Oui|De début Novembre à mi Avril|De début Mars à mi Octobre
+Rue|Commun|LaBonneGraine|RUTACEES|Arbuste|Oui|De début Avril à mi Mai|De début Mai à mi Octobre
+Salade|Commun|LaBonneGraine|ASTERACEES|Légume Feuille|Non|De début Mars à mi Juin|De début Mai à mi Octobre
+Salsifis|Commun|LaBonneGraine|ASTERACEES|Légume Racine|Non|De début Mars à mi Juin|De début Novembre à mi Mars
+Sarrasin|Commun|LaBonneGraine|POLYGONACEES|Fleur|Non|De début Avril à mi Juin|De début Septembre à mi Septembre
+Sarriette|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Non|De mi Avril à mi Mai|De début Mars à mi Février
+Sauge|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Oui|De début Octobre à début Mai|De mi Mars à mi Aout
+Souci|Commun|LaBonneGraine|ASTERACEES|Fleur|Non|De début Mars à mi Juin|De début Avril à mi Octobre
+Sureau|Commun|LaBonneGraine|CAPRIFOLIACEES|Arbuste|Non|De début Mai à mi Octobre|De début Mars à mi Juin
+Tanaisie|Commun|LaBonneGraine|ASTERACEES|Aromates et condiments|Oui|De début Avril à mi Juin|De début Septembre à mi Octobre
+Thym|Commun|LaBonneGraine|LAMIACEES|Aromates et condiments|Oui|De début Mars à mi Mai|De début Mars à début Mai
+Tomate|Commun|LaBonneGraine|SOLANACEES|Légume Fruit|Non|De début Février à mi Avril|De début Juillet à mi Octobre
+Topinambour|Commun|LaBonneGraine|ASTERACEES|Légume Racine|Oui|De début Mars à mi Avril|De début Novembre à mi Mars
+Tournesol|Commun|LaBonneGraine|ASTERACEES|Fleur|Non|De mi Avril à début Avril|De début Septembre à mi Octobre
+Valériane|Commun|LaBonneGraine|VALERIANACEES|Fleur|Oui|De mi Aout à début Septembre|De début Mai à début Aout
+Vigne|Commun|LaBonneGraine|VITACEES|Arbres fruitiers|Non|De début Janvier à mi Décembre|De début Septembre à mi Octobre

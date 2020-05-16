@@ -25,7 +25,7 @@ Partial Class FormPlante
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -43,6 +43,10 @@ Partial Class FormPlante
         Me.Label9 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ButtonOk = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,10 +63,10 @@ Partial Class FormPlante
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(61, 18)
+        Me.TextBox1.Location = New System.Drawing.Point(75, 18)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(163, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(138, 20)
         Me.TextBox1.TabIndex = 1
         '
         'PictureBox1
@@ -76,38 +80,38 @@ Partial Class FormPlante
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'TextBox2
+        'TextBox4
         '
-        Me.TextBox2.Location = New System.Drawing.Point(61, 38)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(163, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.TextBox4.Location = New System.Drawing.Point(75, 42)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox4.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 40)
+        Me.Label2.Location = New System.Drawing.Point(8, 44)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 13)
+        Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Famille"
+        Me.Label2.Text = "Variete"
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(61, 59)
+        Me.TextBox3.Location = New System.Drawing.Point(75, 114)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(163, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(138, 20)
         Me.TextBox3.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(8, 61)
+        Me.Label3.Location = New System.Drawing.Point(8, 119)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
@@ -117,7 +121,7 @@ Partial Class FormPlante
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(61, 80)
+        Me.CheckBox1.Location = New System.Drawing.Point(75, 138)
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 17)
@@ -129,7 +133,7 @@ Partial Class FormPlante
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(8, 110)
+        Me.Label4.Location = New System.Drawing.Point(8, 163)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(81, 13)
@@ -151,7 +155,7 @@ Partial Class FormPlante
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 162)
+        Me.Label5.Location = New System.Drawing.Point(8, 215)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(51, 13)
@@ -161,7 +165,7 @@ Partial Class FormPlante
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(8, 127)
+        Me.Label6.Location = New System.Drawing.Point(8, 180)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(21, 13)
@@ -173,7 +177,7 @@ Partial Class FormPlante
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"début Janvier", "mi Janvier", "début Février", "mi Février", "début Mars", "mi Mars", "début Avril", "mi Avril", "début Mai", "mi Mai", "début Juin", "mi Juin", "début Juillet", "mi Juillet", "début Aout", "mi Aout", "début Septembre", "mi Septembre", "début Octobre", "mi Octobre", "début Novembre", "mi Novembre", "début Décembre", "mi Décembre"})
-        Me.ComboBox1.Location = New System.Drawing.Point(38, 125)
+        Me.ComboBox1.Location = New System.Drawing.Point(38, 178)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(113, 21)
@@ -182,7 +186,7 @@ Partial Class FormPlante
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(165, 127)
+        Me.Label7.Location = New System.Drawing.Point(165, 180)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(13, 13)
@@ -194,7 +198,7 @@ Partial Class FormPlante
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"début Janvier", "mi Janvier", "début Février", "mi Février", "début Mars", "mi Mars", "début Avril", "mi Avril", "début Mai", "mi Mai", "début Juin", "mi Juin", "début Juillet", "mi Juillet", "début Aout", "mi Aout", "début Septembre", "mi Septembre", "début Octobre", "mi Octobre", "début Novembre", "mi Novembre", "début Décembre", "mi Décembre"})
-        Me.ComboBox2.Location = New System.Drawing.Point(196, 125)
+        Me.ComboBox2.Location = New System.Drawing.Point(196, 178)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(113, 21)
@@ -205,7 +209,7 @@ Partial Class FormPlante
         Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"début Janvier", "mi Janvier", "début Février", "mi Février", "début Mars", "mi Mars", "début Avril", "mi Avril", "début Mai", "mi Mai", "début Juin", "mi Juin", "début Juillet", "mi Juillet", "début Aout", "mi Aout", "début Septembre", "mi Septembre", "début Octobre", "mi Octobre", "début Novembre", "mi Novembre", "début Décembre", "mi Décembre"})
-        Me.ComboBox3.Location = New System.Drawing.Point(196, 177)
+        Me.ComboBox3.Location = New System.Drawing.Point(196, 230)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(113, 21)
@@ -214,7 +218,7 @@ Partial Class FormPlante
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(165, 179)
+        Me.Label8.Location = New System.Drawing.Point(165, 232)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(13, 13)
@@ -226,7 +230,7 @@ Partial Class FormPlante
         Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"début Janvier", "mi Janvier", "début Février", "mi Février", "début Mars", "mi Mars", "début Avril", "mi Avril", "début Mai", "mi Mai", "début Juin", "mi Juin", "début Juillet", "mi Juillet", "début Aout", "mi Aout", "début Septembre", "mi Septembre", "début Octobre", "mi Octobre", "début Novembre", "mi Novembre", "début Décembre", "mi Décembre"})
-        Me.ComboBox4.Location = New System.Drawing.Point(38, 177)
+        Me.ComboBox4.Location = New System.Drawing.Point(38, 230)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(113, 21)
@@ -235,7 +239,7 @@ Partial Class FormPlante
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(8, 179)
+        Me.Label9.Location = New System.Drawing.Point(8, 232)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(21, 13)
@@ -248,7 +252,7 @@ Partial Class FormPlante
         '
         'ButtonOk
         '
-        Me.ButtonOk.Location = New System.Drawing.Point(250, 206)
+        Me.ButtonOk.Location = New System.Drawing.Point(250, 259)
         Me.ButtonOk.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonOk.Name = "ButtonOk"
         Me.ButtonOk.Size = New System.Drawing.Size(57, 25)
@@ -256,12 +260,54 @@ Partial Class FormPlante
         Me.ButtonOk.Text = "Ok"
         Me.ButtonOk.UseVisualStyleBackColor = True
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(75, 90)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox2.TabIndex = 21
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(8, 95)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(46, 13)
+        Me.Label10.TabIndex = 20
+        Me.Label10.Text = "Famille"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(75, 66)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox5.TabIndex = 23
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(8, 71)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(63, 13)
+        Me.Label11.TabIndex = 22
+        Me.Label11.Text = "Sementier"
+        '
         'FormPlante
         '
         Me.AcceptButton = Me.ButtonOk
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(317, 242)
+        Me.ClientSize = New System.Drawing.Size(317, 291)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.ButtonOk)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.Label8)
@@ -277,7 +323,7 @@ Partial Class FormPlante
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox1)
@@ -299,7 +345,7 @@ Partial Class FormPlante
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -317,4 +363,8 @@ Partial Class FormPlante
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents ButtonOk As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

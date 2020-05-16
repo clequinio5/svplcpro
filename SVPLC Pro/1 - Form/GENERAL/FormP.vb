@@ -1,14 +1,8 @@
 ﻿Imports System.IO
 Imports System.Text
 Imports System.Drawing.Drawing2D
-Imports unvell.ReoGrid
 Public Class FormP
-    Dim col
     Dim sortColumn As Integer = -1
-
-    '=========================
-    Dim regleBDD As Boolean
-    Dim FormRegleBDD As FormRegleBDD
   Private Sub FormP_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Dim strArgs() As String = Environment.GetCommandLineArgs()
@@ -63,125 +57,39 @@ Public Class FormP
         MoisCalendrier(22) = "début Décembre"
         MoisCalendrier(23) = "mi Décembre"
 
-        ReDim PlancheColor(PlancheMax - 1)
-        PlancheColor(0) = Color.Maroon
-        PlancheColor(1) = Color.Crimson
-        PlancheColor(2) = Color.Violet
-        PlancheColor(3) = Color.SteelBlue
-        PlancheColor(4) = Color.GreenYellow
-        PlancheColor(5) = Color.DeepSkyBlue
-        PlancheColor(6) = Color.Chocolate
-        PlancheColor(7) = Color.LawnGreen
-        PlancheColor(8) = Color.Goldenrod
-        PlancheColor(9) = Color.DarkGreen
-        PlancheColor(10) = Color.Coral
-        PlancheColor(11) = Color.IndianRed
-        PlancheColor(12) = Color.DarkKhaki
-        PlancheColor(13) = Color.YellowGreen
-        PlancheColor(14) = Color.Orange
-        PlancheColor(15) = Color.LightBlue
-        PlancheColor(16) = Color.LightGreen
-        PlancheColor(17) = Color.LightPink
-        PlancheColor(18) = Color.Tomato
-        PlancheColor(19) = Color.LightSteelBlue
-        PlancheColor(20) = Color.Indigo
-        PlancheColor(21) = Color.PaleVioletRed
-
         NombreTabPageSession = 1
 
+        MenuConstructionUnVisible()
+
+    End Sub
+    Private Sub MenuConstructionVisible()
+        MenuConstruction.Enabled = True
+        MenuConstruction.BackColor = Color.DarkOrange
+        EchelleLabel.Visible = True
+        EchelleTextbox.Visible = True
+        ProjectMenuItem.Visible = True
+        OutilsToolStripMenuItem.Visible = True
+    End Sub
+    Private Sub MenuConstructionUnVisible()
+        MenuConstruction.Enabled = False
+        MenuConstruction.BackColor = Color.DarkGray
+        EchelleLabel.Visible = False
+        EchelleTextbox.Visible = False
+        ProjectMenuItem.Visible = False
+        OutilsToolStripMenuItem.Visible = False
     End Sub
     '=========================================================================================================
     'FICHIER
     Private Sub NouveauProjetToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NouveauProjetToolStripMenuItem.Click
-
-        Select Case ProjectType
-            Case TypeProjet.SPACE
-                FormProjet.LabelAttention.Text = "Attention! Un projet de conception sur base spaciale est en cours." & vbCrLf & "Si vous choisissez de continuer, toutes les données non enregistrées seront perdues."
-                FormProjet.LabelAttention.TextAlign = ContentAlignment.TopLeft
-            Case TypeProjet.TMP
-                FormProjet.LabelAttention.Text = "Attention! Un projet de conception sur base temporelle est en cours." & vbCrLf & "Si vous choisissez de continuer, toutes les données non enregistrées seront perdues."
-                FormProjet.LabelAttention.TextAlign = ContentAlignment.TopLeft
-            Case TypeProjet.TMPA
-                FormProjet.LabelAttention.Text = "Attention! Un projet de conception sur base temporelle automatisé est en cours." & vbCrLf & "Si vous choisissez de continuer, toutes les données non enregistrées seront perdues."
-                FormProjet.LabelAttention.TextAlign = ContentAlignment.TopLeft
-            Case Else
-                FormProjet.LabelAttention.Text = "***********************"
-                FormProjet.LabelAttention.TextAlign = ContentAlignment.MiddleCenter
-        End Select
-
-        If FormProjet.ShowDialog = DialogResult.OK Then
-
-
-            If FormProjet.RadioButtonSPACE.Checked = True Then
-                'Nouveau projet SPACE
-
-                FormNomPhaseSPACE.TextBoxNomPhase.Text = "Phase" & NombreTabPageSession
-                FormNomPhaseSPACE.TextBoxNomPhase.SelectAll()
-
-                If FormNomPhaseSPACE.ShowDialog = DialogResult.OK Then
-
-                    Reset()
-
-                    NewProjectSPA()
-
-                End If
-
-            Else
-                If FormProjet.RadioButtonTMP.Checked = True Then
-                    'Nouveau projet TMP
-
-                    Reset()
-
-                    NewProjectTMP()
-
-                Else
-                    'Nouveau projet TMPA
-
-                    If FormPlanchesTMPA.ShowDialog = DialogResult.OK Then
-
-                        ProjetTMPNPlanche = CInt(FormPlanchesTMPA.NPlanches.Value)
-                        ProjetTMPLongueur = FormPlanchesTMPA.LonPlanche.Value
-                        ProjetTMPLargeur = FormPlanchesTMPA.LarPlanche.Value
-                        ProjetTMPEspacement = FormPlanchesTMPA.EspPlanche.Value
-
-                        With FormCaracteristiqueProjet
-                            .ComboBoxSpatiale.Enabled = True
-                            .Label2.Enabled = True
-                            Dim compt As Decimal = 0
-                            Dim div As Integer = 0
-                            Do
-                                compt += 0.01
-                                If ProjetTMPLongueur Mod compt = 0 Then
-                                    div = ProjetTMPLongueur / compt
-                                    .ComboBoxSpatiale.Items.Add(compt & " - (" & div & " div.)")
-                                    If div >= 20 Then
-                                        .ComboBoxSpatiale.SelectedItem = compt & " - (" & div & " div.)"
-                                    End If
-                                End If
-                            Loop Until compt = ProjetTMPLongueur
-                        End With
-
-                        If FormCaracteristiqueProjet.ShowDialog = DialogResult.OK Then
-
-                            ProjectTMPDebut = FormCaracteristiqueProjet.LabelDebut.Text
-                            ProjectTMPFin = FormCaracteristiqueProjet.LabelFin.Text
-                            ProjectTMPDivisionTemps = FormCaracteristiqueProjet.ComboBoxDivision.Text
-                            ProjectTMPDivisionSpatial = CDec(Split(FormCaracteristiqueProjet.ComboBoxSpatiale.Text, " - ")(0))
-                            NLigneTMPA = CInt(ProjetTMPNPlanche / ProjectTMPDivisionSpatial)
-
-                            Reset()
-
-                            NewProjectTMPA()
-
-                        End If
-                    End If
-                End If
-            End If
+        FormNomPhaseSPACE.TextBoxNomPhase.Text = "Phase" & NombreTabPageSession
+        FormNomPhaseSPACE.TextBoxNomPhase.SelectAll()
+        If FormNomPhaseSPACE.ShowDialog = DialogResult.OK Then
+            Reset()
+            NewProjectSPA()
         End If
     End Sub
     Private Sub NewProjectSPA()
         ProjectType = TypeProjet.SPACE
-        LabelProjet.Text = "Projet Spatial"
 
         Dim str As String = FormNomPhaseSPACE.TextBoxNomPhase.Text
         If str <> "" Then
@@ -191,11 +99,10 @@ Public Class FormP
             TabControlConstruction.SelectedTab = NewTabPage
             NombreTabPageSession += 1
 
-            ProjectMenuItem.Visible = True
-            EchelleLabel.Visible = True
+            MenuConstructionVisible()
+
             Echelle = 0
             EchelleTextbox.Text = "0"
-            EchelleTextbox.Visible = True
             EnregistrerLeProjetToolStripMenuItem.Enabled = True
 
             AjouterPhase.Enabled = True
@@ -203,136 +110,18 @@ Public Class FormP
 
         End If
     End Sub
-    Private Sub NewProjectTMPA()
-        ProjectType = TypeProjet.TMPA
-        LabelProjet.Text = "Projet Temporel Automatisé"
-        EchelleLabel.Visible = False
-        Echelle = 0
-        EchelleTextbox.Text = "0"
-        EchelleTextbox.Visible = False
-        EnregistrerLeProjetToolStripMenuItem.Enabled = True
-
-        AjouterPhase.Enabled = False
-        SupprimerPhaseActive.Enabled = False
-
-        For p = 0 To ProjetTMPNPlanche - 1
-            Dim tbp As New TabPageTMPA
-            With tbp
-                .BackColor = Color.LightGray
-                .Tag = New Planche
-                .Text = "Planche" & p + 1
-                Dim DTG As ReoGridControl = .Controls.Find("DTGrid", True)(0)
-                NColumnTMPA = DateDiff(DateInterval.Day, CDate(ProjectTMPDebut), CDate(ProjectTMPFin))
-                Select Case ProjectTMPDivisionTemps
-                    Case "Jour"
-                    Case "1 Semaine - 7 Jours"
-                        NColumnTMPA = Int(NColumnTMPA / 7) + 1
-                    Case "2 Semaine - 14 Jours "
-                        NColumnTMPA = Int(NColumnTMPA / 14) + 1
-                    Case "3 Semaine - 21 Jours"
-                        NColumnTMPA = Int(NColumnTMPA / 21) + 1
-                    Case "Mois"
-                        NColumnTMPA = DateDiff(DateInterval.Month, CDate(ProjectTMPDebut), CDate(ProjectTMPFin))
-                    Case "Année"
-                        DateDiff(DateInterval.Year, CDate(ProjectTMPDebut), CDate(ProjectTMPFin))
-                    Case Else
-                        Exit Sub
-                End Select
-
-                With DTG
-                    .ColCount = NColumnTMPA + 2
-                    .RowCount = NLigneTMPA + 3
-                End With
-
-                DTG(0, 0) = "SEMAINE"
-                DTG(1, 0) = "JOUR"
-                DTG(2, 0) = "MOIS"
-
-                For j = 3 To NLigneTMPA + 2
-                    DTG(j, 0) = CStr((j - 3) * ProjectTMPDivisionSpatial)
-                    DTG.SetRowsHeight(j, 1, cDalleSetupTMPA)
-                Next
-
-                For i = 1 To NColumnTMPA
-                    Dim DateInc As Date = DateAdd(DateInterval.Day, (i - 1) * 7, CDate(ProjectTMPDebut))
-                    DTG.SetColsWidth(i, 1, cDalleSetupTMPA)
-                    DTG(0, i) = DatePart(DateInterval.WeekOfYear, DateInc)
-                    DTG(1, i) = DateInc.Day
-                    DTG(2, i) = StrConv(DateInc.ToString("MMMM"), vbProperCase)
-                Next
-
-                Dim st As New ReoGridRangeStyle
-                With st
-                    .Italic = True
-                    .BackColor = Color.AliceBlue
-                End With
-                Dim rg As New ReoGridRange(1, 1, 1, 5)
-                DTG.SetRangeStyle(rg, st)
-
-                'fusionnage des cellules au meme mois
-                Dim start, term As Integer
-                Dim cache As String
-                start = 1
-                term = 1
-                cache = DTG(2, start)
-                For i = 1 To NColumnTMPA
-                    If cache <> DTG(2, i) Then
-                        term = i
-                        DTG.MergeRange(2, start, 1, term - start)
-                        cache = DTG(2, i)
-                        start = i
-                    End If
-                Next
-                DTG.MergeRange(2, start, 1, NColumnTMPA - start + 1)
-
-            End With
-            TabControlConstruction.Controls.Add(tbp)
-        Next
-    End Sub
-    Private Sub NewProjectTMP()
-        ProjectType = TypeProjet.TMP
-        LabelProjet.Text = "Projet Temporel"
-        Ajouter_TMP1()
-        EchelleLabel.Visible = True
-        Echelle = 0
-        EchelleTextbox.Text = "0"
-        EchelleTextbox.Visible = True
-        EnregistrerLeProjetToolStripMenuItem.Enabled = True
-
-        AjouterPhase.Enabled = False
-        SupprimerPhaseActive.Enabled = False
-    End Sub
+  
     Private Sub Reset()
         'initialisation
         For Each tbp In TabControlConstruction.TabPages
             tbp.dispose()
         Next
         NombreTabPageSession = 1
-        ProjectMenuItem.Visible = False
-        EchelleLabel.Visible = False
-        EchelleTextbox.Visible = False
+        MenuConstructionUnVisible()
     End Sub
-    Private Sub Ajouter_TMP1()
-        Dim NewTabPage As New TabPageTMP1
-        With TabControlConstruction
-            .TabPages.Add(NewTabPage)
-            .SelectedTab = NewTabPage
-        End With
-    End Sub
+    
     Private Sub EnregistrerLeProjetToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EnregistrerLeProjetToolStripMenuItem.Click
-        Select Case ProjectType
-            Case TypeProjet.TMP
-
-            Case TypeProjet.TMPA
-
-
-
-
-
-
-
-
-            Case TypeProjet.SPACE
+      
                 Try
                     SaveFileDialog1.FileName = "ProjectSVPLCPro"
                     If SaveFileDialog1.ShowDialog() = Windows.Forms.DialogResult.OK Then
@@ -382,9 +171,6 @@ Public Class FormP
                 Catch ex As Exception
                     MsgBox("Le projet n'a pas pu être enregistré", MsgBoxStyle.Exclamation, "Erreur d'écriture fichier")
                 End Try
-            Case Else
-
-        End Select
         
     End Sub
     Private Sub ImporterUnProjetToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImporterUnProjetToolStripMenuItem.Click
@@ -526,8 +312,9 @@ Public Class FormP
                 .SelectedTab = .TabPages(.TabPages.Count - 1)
             End With
 
-            EchelleTextbox.Visible = True
-            EchelleLabel.Visible = True
+            MenuConstructionVisible()
+            EnregistrerLeProjetToolStripMenuItem.Enabled = True
+
 
         Catch ex As Exception
             MsgBox("Le fichier est corrompu", MsgBoxStyle.Exclamation, "Erreur chargement fichier")
@@ -536,7 +323,7 @@ Public Class FormP
     End Sub
     '=====================================================================================================================
     'PROJET
-    Private Sub Ajouter_Phase()
+    Public Sub Ajouter_Phase()
         FormNomPhaseSPACE.TextBoxNomPhase.Text = "Phase" & NombreTabPageSession
         FormNomPhaseSPACE.TextBoxNomPhase.SelectAll()
 
@@ -566,16 +353,15 @@ Public Class FormP
             Next
             Select Case spa
                 Case True
-                    EchelleLabel.Visible = True
-                    EchelleTextbox.Visible = True
+                    MenuConstructionVisible()
                 Case False
-                    EchelleLabel.Visible = False
-                    EchelleTextbox.Visible = False
-                    ProjectMenuItem.Visible = False
+                    MenuConstructionUnVisible()
                     ProjectType = ""
-                    LabelProjet.Text = "Bienvenue"
             End Select
         End If
+    End Sub
+    Private Sub RenommerLaPhaseActiveToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles RenommerLaPhaseActiveToolStripMenuItem.Click
+        TabControlConstruction.SelectedTab.Text = InputBox("Nouveau nom pour la phase active", TabControlConstruction.SelectedTab.Text)
     End Sub
     '===============================================================================================================
     '?
@@ -622,9 +408,11 @@ Public Class FormP
             End If
             .Label1.Tag = nom
             .TextBox1.Text = nom
-            .TextBox2.Text = ListViewPlantes.SelectedItems(0).SubItems(1).Text
-            .TextBox3.Text = ListViewPlantes.SelectedItems(0).SubItems(2).Text
-            Select Case ListViewPlantes.SelectedItems(0).SubItems(3).Text
+            .TextBox4.Text = ListViewPlantes.SelectedItems(0).SubItems(1).Text
+            .TextBox5.Text = ListViewPlantes.SelectedItems(0).SubItems(2).Text
+            .TextBox3.Text = ListViewPlantes.SelectedItems(0).SubItems(4).Text
+            .TextBox2.Text = ListViewPlantes.SelectedItems(0).SubItems(3).Text
+            Select Case ListViewPlantes.SelectedItems(0).SubItems(5).Text
                 Case "Oui"
                     .CheckBox1.Checked = True
                 Case "Non"
@@ -632,11 +420,11 @@ Public Class FormP
                 Case Else
             End Select
             Dim strg() As String
-            strg = ListViewPlantes.SelectedItems(0).SubItems(4).Text.Split(" ")
+            strg = ListViewPlantes.SelectedItems(0).SubItems(6).Text.Split(" ")
             .ComboBox1.SelectedIndex = Mois2Integer(strg(1) & " " & strg(2))
             .ComboBox2.SelectedIndex = Mois2Integer(strg(4) & " " & strg(5))
 
-            strg = ListViewPlantes.SelectedItems(0).SubItems(5).Text.Split(" ")
+            strg = ListViewPlantes.SelectedItems(0).SubItems(7).Text.Split(" ")
             .ComboBox3.SelectedIndex = Mois2Integer(strg(1) & " " & strg(2))
             .ComboBox4.SelectedIndex = Mois2Integer(strg(4) & " " & strg(5))
 
@@ -654,27 +442,19 @@ Public Class FormP
         FormPlante.Show()
     End Sub
     Private Sub ListViewPlantes_ColumnClick_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ColumnClickEventArgs) Handles ListViewPlantes.ColumnClick
-        ' Determine whether the column is the same as the last column clicked.
         If e.Column <> sortColumn Then
-            ' Set the sort column to the new column.
             sortColumn = e.Column
-            ' Set the sort order to ascending by default.
             ListViewPlantes.Sorting = SortOrder.Ascending
         Else
-            ' Determine what the last sort order was and change it.
             If ListViewPlantes.Sorting = SortOrder.Ascending Then
                 ListViewPlantes.Sorting = SortOrder.Descending
             Else
                 ListViewPlantes.Sorting = SortOrder.Ascending
             End If
         End If
-        ' Call the sort method to manually sort.
         ListViewPlantes.Sort()
-        ' Set the ListViewItemSorter property to a new ListViewItemComparer
-        ' object.
         ListViewPlantes.ListViewItemSorter = New ListViewItemComparer(e.Column, ListViewPlantes.Sorting)
     End Sub
-    '=============================================================================================================================================
     'BDD ASSOCIATIONS
     Private Sub DataGridViewAssociations_CellEndEdit(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridViewAssociations.CellEndEdit
         'COLORIE LES BDD APRES EDIT
@@ -878,25 +658,17 @@ Public Class FormP
     End Sub
     
     Private Sub ListViewEntretien_ColumnClick_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ColumnClickEventArgs) Handles ListViewEntretien.ColumnClick
-
-        ' Determine whether the column is the same as the last column clicked.
         If e.Column <> sortColumn Then
-            ' Set the sort column to the new column.
             sortColumn = e.Column
-            ' Set the sort order to ascending by default.
             ListViewEntretien.Sorting = SortOrder.Ascending
         Else
-            ' Determine what the last sort order was and change it.
             If ListViewEntretien.Sorting = SortOrder.Ascending Then
                 ListViewEntretien.Sorting = SortOrder.Descending
             Else
                 ListViewEntretien.Sorting = SortOrder.Ascending
             End If
         End If
-        ' Call the sort method to manually sort.
         ListViewEntretien.Sort()
-        ' Set the ListViewItemSorter property to a new ListViewItemComparer
-        ' object.
         ListViewEntretien.ListViewItemSorter = New ListViewItemComparer(e.Column, ListViewEntretien.Sorting)
     End Sub
     Private Sub FormP_Resize(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Resize
@@ -921,20 +693,13 @@ Public Class FormP
         Dim opt As New FormOptions
         opt.Show()
     End Sub
-    Private Sub AjouterDesRèglesAutomatiquesAuxBDDToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        FormRegleBDD = New FormRegleBDD
-        FormRegleBDD.Show()
-
-    End Sub
-    '********************************************************************************************
-    'SPACE
     Public Sub ListViewPlantes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListViewPlantes.Click
 
         'ANALYSE
+
         Try
             Dim DTG As DTGSPACE = TabControlConstruction.SelectedTab.Controls.Find("DTGridSPACE", True)(0)
-            Dim tltip As String = ""
-
+            DTG.SuspendLayout()
             For i = 0 To DTG.ColumnCount - 1
                 For j = 0 To DTG.RowCount - 1
                     If DTG(i, j).Tag = "" Then
@@ -943,8 +708,8 @@ Public Class FormP
                     End If
                 Next
             Next
+            DTG.ResumeLayout()
         Catch ex As Exception
-
         End Try
 
 
@@ -952,33 +717,21 @@ Public Class FormP
 
     Private Sub TabControlConstruction_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabControlConstruction.SelectedIndexChanged
 
-        Select Case ProjectType
-            Case "tmp"
+        Try
+            Dim Cell As CellSPACE
+            Dim PreviousDTG As DTGSPACE = TabControlConstruction.TabPages(TabControlConstruction.SelectedIndex - 1).Controls.Find("DTGridSPACE", True)(0)
+            Dim DTG As DTGSPACE = TabControlConstruction.SelectedTab.Controls.Find("DTGridSPACE", True)(0)
 
-            Case "spa"
-                'ROTATION
-                Try
-                    Dim Cell As CellSPACE
-                    Dim PreviousDTG As DTGSPACE = TabControlConstruction.TabPages(TabControlConstruction.SelectedIndex - 1).Controls.Find("DTGridSPACE", True)(0)
-                    Dim DTG As DTGSPACE = TabControlConstruction.SelectedTab.Controls.Find("DTGridSPACE", True)(0)
-
-                    For i = 0 To DTG.ColumnCount - 1
-                        For j = 0 To DTG.RowCount - 1
-                            If PreviousDTG(i, j) IsNot Nothing Then
-                                Cell = DTG(i, j)
-                                Cell.Rotation = PreviousDTG(i, j).Tag
-                            End If
-                        Next
-                    Next
-                Catch ex As Exception
-
-                End Try
-
-            Case Else
-
-        End Select
-
-        
+            For i = 0 To DTG.ColumnCount - 1
+                For j = 0 To DTG.RowCount - 1
+                    If PreviousDTG(i, j) IsNot Nothing Then
+                        Cell = DTG(i, j)
+                        Cell.Rotation = PreviousDTG(i, j).Tag
+                    End If
+                Next
+            Next
+        Catch ex As Exception
+        End Try
 
     End Sub
     Private Sub EchelleTextbox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles EchelleTextbox.KeyDown
@@ -988,114 +741,37 @@ Public Class FormP
         End If
     End Sub
     Private Sub Change_Echelle()
-        Select Case ProjectType
-            Case "tmp"
-                Try
-                    Echelle = CDec(EchelleTextbox.Text)
-                    For Each tbp As TabPage In TabControlConstruction.TabPages
-                        If TypeOf tbp Is TabPageTMP1 Then
-                            Dim DTG As DTGTMP1 = tbp.Controls.Find("DTGridTMP1", True)(0)
-                            For Each col As ColumnCellTMP1 In DTG.Columns
-                                col.HeaderText = CInt(col.Tag) * Echelle
-                            Next
-                            For Each lin As DataGridViewRow In DTG.Rows
-                                lin.HeaderCell.Value = (CInt(lin.Tag) * Echelle).ToString
-                            Next
-                        End If
-                    Next
-                Catch ex As Exception
-                    For i = 0 To TabControlConstruction.TabPages.Count - 1
-                        If TypeOf TabControlConstruction.TabPages(i) Is TabPageTMP1 Then
-                            Dim DTG As DTGTMP1 = TabControlConstruction.TabPages(i).Controls.Find("DTGridTMP1", True)(0)
-                            EchelleTextbox.Text = DTG.Columns(1).HeaderText
-                            Echelle = CDec(EchelleTextbox.Text)
-                            Exit For
-                        End If
-                    Next
-                End Try
-            Case "spa"
-                Try
-                    Echelle = CDec(EchelleTextbox.Text)
-                    For Each tbp As TabPage In TabControlConstruction.TabPages
-                        If TypeOf tbp Is TabPageSPACE Then
-                            Dim DTG As DTGSPACE = tbp.Controls.Find("DTGridSPACE", True)(0)
-                            For Each col As ColumnCellSPACE In DTG.Columns
-                                col.HeaderText = CInt(col.Tag) * Echelle
-                            Next
-                            For Each lin As DataGridViewRow In DTG.Rows
-                                lin.HeaderCell.Value = (CInt(lin.Tag) * Echelle).ToString
-                            Next
-                        End If
-                    Next
-                Catch ex As Exception
-                    For i = 0 To TabControlConstruction.TabPages.Count - 1
-                        If TypeOf TabControlConstruction.TabPages(i) Is TabPageSPACE Then
-                            Dim DTG As DTGSPACE = TabControlConstruction.TabPages(i).Controls.Find("DTGridSPACE", True)(0)
-                            EchelleTextbox.Text = DTG.Columns(1).HeaderText
-                            Echelle = CDec(EchelleTextbox.Text)
-                            Exit For
-                        End If
-                    Next
-                End Try
-            Case Else
-
-        End Select
         
+        Try
+            Echelle = CDec(EchelleTextbox.Text)
+            For Each tbp As TabPage In TabControlConstruction.TabPages
+                If TypeOf tbp Is TabPageSPACE Then
+                    Dim DTG As DTGSPACE = tbp.Controls.Find("DTGridSPACE", True)(0)
+                    For Each col As ColumnCellSPACE In DTG.Columns
+                        col.HeaderText = CInt(col.Tag) * Echelle
+                    Next
+                    For Each lin As DataGridViewRow In DTG.Rows
+                        lin.HeaderCell.Value = (CInt(lin.Tag) * Echelle).ToString
+                    Next
+                End If
+            Next
+        Catch ex As Exception
+            For i = 0 To TabControlConstruction.TabPages.Count - 1
+                If TypeOf TabControlConstruction.TabPages(i) Is TabPageSPACE Then
+                    Dim DTG As DTGSPACE = TabControlConstruction.TabPages(i).Controls.Find("DTGridSPACE", True)(0)
+                    EchelleTextbox.Text = DTG.Columns(1).HeaderText
+                    Echelle = CDec(EchelleTextbox.Text)
+                    Exit For
+                End If
+            Next
+        End Try
 
     End Sub
-    '===========================================================================
-    'DROP TABCONTROL SPACE
-    'Private Function GetTabPageFromPoint(ByVal pt As Point) As TabPage
-    '    Dim tp As TabPage = Nothing
-    '    For i As Integer = 0 To Me.TabControlBDD.TabPages.Count - 1
-    '        If Me.TabControlBDD.GetTabRect(i).Contains(pt) Then
-    '            tp = Me.TabControlBDD.TabPages(i)
-    '            Exit For
-    '        End If
-    '    Next i
-    '    Return tp
-    'End Function
-    'Private Function FindTabIndex(ByVal page As TabPage) As Integer
-    '    For i As Integer = 0 To Me.TabControlBDD.TabPages.Count - 1
-    '        If Me.TabControlBDD.TabPages(i) Is page Then
-    '            Return i
-    '        End If
-    '    Next i
-    '    Return -1
-    'End Function
-    'Private Sub TabEditors_DragOver(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles TabControlBDD.DragOver
-    '    Dim pt As New Point(e.X, e.Y)
-    '    pt = Me.TabControlBDD.PointToClient(pt)
-    '    Dim hover_tab As TabPage = GetTabPageFromPoint(pt)
-    '    If Not hover_tab Is Nothing Then
-    '        If e.Data.GetDataPresent(GetType(TabPage)) Then
-    '            e.Effect = DragDropEffects.Move
-    '            Dim drag_tab As TabPage = CType(e.Data.GetData(GetType(TabPage)), TabPage)
-    '            Dim item_drag_index As Integer = FindTabIndex(drag_tab)
-    '            Dim drop_location_index As Integer = FindTabIndex(hover_tab)
-    '            If item_drag_index <> drop_location_index Then
-    '                Dim pages As New ArrayList()
-    '                For i As Integer = 0 To Me.TabControlBDD.TabPages.Count - 1
-    '                    If i <> item_drag_index Then
-    '                        pages.Add(Me.TabControlBDD.TabPages(i))
-    '                    End If
-    '                Next i
-    '                pages.Insert(drop_location_index, drag_tab)
-    '                Me.TabControlBDD.TabPages.Clear()
-    '                Me.TabControlBDD.TabPages.AddRange(CType(pages.ToArray(GetType(TabPage)), TabPage()))
-    '                Me.TabControlBDD.SelectedTab = drag_tab
-    '            End If
-    '        End If
-    '    Else
-    '        e.Effect = DragDropEffects.None
-    '    End If
-    'End Sub
-    'Private Sub TabEditors_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles TabControlBDD.MouseDown
-    '    Dim pt As Point = New Point(e.X, e.Y)
-    '    Dim tp As TabPage = GetTabPageFromPoint(pt)
-    '    If Not tp Is Nothing Then
-    '        DoDragDrop(tp, DragDropEffects.All)
-    '    End If
-    'End Sub
     
+    Private Sub GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem.Click
+        Dim FormGenerate As New FormGenerate
+        Dim DTG As DTGSPACE = TabControlConstruction.SelectedTab.Controls.Find("DTGridSPACE", True)(0)
+        FormGenerate.DTG = DTG
+        FormGenerate.ShowDialog()
+    End Sub
 End Class

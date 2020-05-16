@@ -5,8 +5,7 @@
 #define MyAppVersion "1.0"
 #define MyAppPublisher "Kiki's Company"
 #define MyAppExeName "SVPLC Pro.exe"
-#define Dirscript "C:\Users\Kiki\Desktop\Programmation\SVPLC Pro\Iss"
-#define DirBDD "C:\Users\Kiki\Desktop\Programmation\SVPLC Pro\SVPLC Pro BDD vierges"
+#define DirWkspc "C:\Users\Kiki\Desktop\SVPLC Pro"
 #define DirDoc "{userdocs}\SVPLC Pro"
 
 [Setup]
@@ -20,7 +19,7 @@ AppVersion={#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-OutputDir=C:\Users\Kiki\Desktop\Programmation\SVPLC Pro\Com
+OutputDir={#DirWkspc}\Com
 OutputBaseFilename=Setup SVPLC Pro
 Compression=lzma
 SolidCompression=yes
@@ -34,13 +33,13 @@ Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Kiki\Desktop\Programmation\SVPLC Pro\SVPLC Pro\bin\Release\SVPLC Pro.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#Dirscript}\Icone svplcpro256.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#DirBDD}\BDD Associations.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
-Source: "{#DirBDD}\BDD Plantes.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
-Source: "{#DirBDD}\BDD Rotations.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
-Source : "{#DirBDD}\IMAGES\*" ; DestDir : "{#DirDoc}\IMAGES" ; Flags : ignoreversion
-; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+Source: "{#DirWkspc}\SVPLC Pro\bin\Release\SVPLC Pro.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#DirWkspc}\Iss\Icone svplcpro256.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#DirWkspc}\SVPLC Pro BDD vierges\BDD Associations.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
+Source: "{#DirWkspc}\SVPLC Pro BDD vierges\BDD Plantes.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
+Source: "{#DirWkspc}\SVPLC Pro BDD vierges\BDD Rotations.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
+Source: "{#DirWkspc}\SVPLC Pro BDD vierges\BDD Entretien.txt"; DestDir: "{#DirDoc}"; Flags: ignoreversion
+Source : "{#DirWkspc}\SVPLC Pro BDD vierges\IMAGES\*" ; DestDir : "{#DirDoc}\IMAGES" ; Flags : ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}";IconFilename:"{app}\Icone svplcpro256.ico"

@@ -23,11 +23,11 @@ Partial Class FormP
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormP))
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Status = New System.Windows.Forms.StatusStrip()
         Me.LabelProjet = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
@@ -38,6 +38,7 @@ Partial Class FormP
         Me.ButtonModifyPlante = New System.Windows.Forms.Button()
         Me.ListViewPlantes = New System.Windows.Forms.ListView()
         Me.ColumnNom = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnVariete = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnFamille = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnType = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnVivace = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -67,7 +68,7 @@ Partial Class FormP
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ButtonADDEntretien = New System.Windows.Forms.Button()
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.ToolstripMenu = New System.Windows.Forms.MenuStrip()
         Me.FichierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NouveauProjetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EnregistrerLeProjetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -75,8 +76,12 @@ Partial Class FormP
         Me.ParamètresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AProposToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FaireUnDonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControlConstruction = New System.Windows.Forms.TabControl()
         Me.TabPageBienvenue = New System.Windows.Forms.TabPage()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuConstruction = New System.Windows.Forms.MenuStrip()
         Me.EchelleTextbox = New System.Windows.Forms.ToolStripTextBox()
         Me.EchelleLabel = New System.Windows.Forms.ToolStripMenuItem()
@@ -84,9 +89,12 @@ Partial Class FormP
         Me.AjouterPhase = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupprimerPhaseActive = New System.Windows.Forms.ToolStripMenuItem()
         Me.RenommerLaPhaseActiveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OutilsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImageListPlantes = New System.Windows.Forms.ImageList(Me.components)
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.ColumnSementier = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Status.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -111,8 +119,11 @@ Partial Class FormP
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TabPageEntretien.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
-        Me.Menu.SuspendLayout()
+        Me.ToolstripMenu.SuspendLayout()
         Me.TabControlConstruction.SuspendLayout()
+        Me.TabPageBienvenue.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuConstruction.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -141,7 +152,7 @@ Partial Class FormP
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.TabControlBDD)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Menu)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.ToolstripMenu)
         '
         'SplitContainer1.Panel2
         '
@@ -218,7 +229,7 @@ Partial Class FormP
         'ListViewPlantes
         '
         Me.ListViewPlantes.BackColor = System.Drawing.SystemColors.Window
-        Me.ListViewPlantes.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnNom, Me.ColumnFamille, Me.ColumnType, Me.ColumnVivace, Me.ColumnSemis, Me.ColumnRecolte})
+        Me.ListViewPlantes.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnNom, Me.ColumnVariete, Me.ColumnSementier, Me.ColumnFamille, Me.ColumnType, Me.ColumnVivace, Me.ColumnSemis, Me.ColumnRecolte})
         Me.TableLayoutPanel3.SetColumnSpan(Me.ListViewPlantes, 3)
         Me.ListViewPlantes.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListViewPlantes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -239,6 +250,10 @@ Partial Class FormP
         '
         Me.ColumnNom.Text = "Nom"
         Me.ColumnNom.Width = 120
+        '
+        'ColumnVariete
+        '
+        Me.ColumnVariete.Text = "Variete"
         '
         'ColumnFamille
         '
@@ -317,26 +332,26 @@ Partial Class FormP
         Me.DataGridViewAssociations.AllowUserToDeleteRows = False
         Me.DataGridViewAssociations.AllowUserToResizeRows = False
         Me.DataGridViewAssociations.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.NullValue = Nothing
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewAssociations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.NullValue = Nothing
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewAssociations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewAssociations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.Format = "N0"
-        DataGridViewCellStyle6.NullValue = Nothing
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewAssociations.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.Format = "N0"
+        DataGridViewCellStyle2.NullValue = Nothing
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewAssociations.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewAssociations.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridViewAssociations.Location = New System.Drawing.Point(0, 0)
         Me.DataGridViewAssociations.MultiSelect = False
@@ -437,26 +452,26 @@ Partial Class FormP
         Me.DataGridViewRotations.AllowUserToDeleteRows = False
         Me.DataGridViewRotations.AllowUserToResizeRows = False
         Me.DataGridViewRotations.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle7.NullValue = Nothing
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewRotations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.NullValue = Nothing
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewRotations.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewRotations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.Format = "N0"
-        DataGridViewCellStyle8.NullValue = Nothing
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewRotations.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.Format = "N0"
+        DataGridViewCellStyle4.NullValue = Nothing
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewRotations.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewRotations.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridViewRotations.Location = New System.Drawing.Point(0, 0)
         Me.DataGridViewRotations.MultiSelect = False
@@ -608,16 +623,16 @@ Partial Class FormP
         Me.ButtonADDEntretien.Text = "Ajouter..."
         Me.ButtonADDEntretien.UseVisualStyleBackColor = True
         '
-        'Menu
+        'ToolstripMenu
         '
-        Me.Menu.AutoSize = False
-        Me.Menu.BackColor = System.Drawing.Color.DarkGray
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FichierToolStripMenuItem, Me.ParamètresToolStripMenuItem, Me.AProposToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(313, 27)
-        Me.Menu.TabIndex = 1
-        Me.Menu.Text = "MenuStrip1"
+        Me.ToolstripMenu.AutoSize = False
+        Me.ToolstripMenu.BackColor = System.Drawing.Color.DarkGray
+        Me.ToolstripMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FichierToolStripMenuItem, Me.ParamètresToolStripMenuItem, Me.AProposToolStripMenuItem})
+        Me.ToolstripMenu.Location = New System.Drawing.Point(0, 0)
+        Me.ToolstripMenu.Name = "ToolstripMenu"
+        Me.ToolstripMenu.Size = New System.Drawing.Size(313, 27)
+        Me.ToolstripMenu.TabIndex = 1
+        Me.ToolstripMenu.Text = "MenuStrip1"
         '
         'FichierToolStripMenuItem
         '
@@ -666,43 +681,95 @@ Partial Class FormP
         '
         'AProposToolStripMenuItem
         '
+        Me.AProposToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FaireUnDonToolStripMenuItem})
         Me.AProposToolStripMenuItem.Name = "AProposToolStripMenuItem"
         Me.AProposToolStripMenuItem.Size = New System.Drawing.Size(24, 23)
         Me.AProposToolStripMenuItem.Text = "?"
+        '
+        'FaireUnDonToolStripMenuItem
+        '
+        Me.FaireUnDonToolStripMenuItem.Name = "FaireUnDonToolStripMenuItem"
+        Me.FaireUnDonToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.FaireUnDonToolStripMenuItem.Text = "Faire un don"
         '
         'TabControlConstruction
         '
         Me.TabControlConstruction.Controls.Add(Me.TabPageBienvenue)
         Me.TabControlConstruction.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlConstruction.ItemSize = New System.Drawing.Size(63, 20)
-        Me.TabControlConstruction.Location = New System.Drawing.Point(0, 24)
+        Me.TabControlConstruction.Location = New System.Drawing.Point(0, 27)
         Me.TabControlConstruction.Margin = New System.Windows.Forms.Padding(0)
         Me.TabControlConstruction.Name = "TabControlConstruction"
         Me.TabControlConstruction.Padding = New System.Drawing.Point(0, 0)
         Me.TabControlConstruction.SelectedIndex = 0
-        Me.TabControlConstruction.Size = New System.Drawing.Size(626, 534)
+        Me.TabControlConstruction.Size = New System.Drawing.Size(626, 531)
         Me.TabControlConstruction.TabIndex = 0
         '
         'TabPageBienvenue
         '
         Me.TabPageBienvenue.BackColor = System.Drawing.Color.Black
-        Me.TabPageBienvenue.BackgroundImage = Global.SVPLC_Grid.My.Resources.Resources.Icone_svplcpro_transp3
-        Me.TabPageBienvenue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.TabPageBienvenue.BackgroundImage = Global.SVPLC_Grid.My.Resources.Resources.Icone_svplcpro256
+        Me.TabPageBienvenue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.TabPageBienvenue.Controls.Add(Me.TableLayoutPanel5)
         Me.TabPageBienvenue.Location = New System.Drawing.Point(4, 24)
         Me.TabPageBienvenue.Name = "TabPageBienvenue"
         Me.TabPageBienvenue.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageBienvenue.Size = New System.Drawing.Size(618, 506)
+        Me.TabPageBienvenue.Size = New System.Drawing.Size(618, 503)
         Me.TabPageBienvenue.TabIndex = 0
         Me.TabPageBienvenue.Tag = "Bienvenue"
         Me.TabPageBienvenue.Text = "Bienvenue"
         '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.ColumnCount = 3
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel5.Controls.Add(Me.Label1, 1, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.PictureBox1, 1, 1)
+        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 4
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(612, 497)
+        Me.TableLayoutPanel5.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.TableLayoutPanel5.SetColumnSpan(Me.Label1, 3)
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DarkOrange
+        Me.Label1.Location = New System.Drawing.Point(50, 240)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(50, 0, 50, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(512, 217)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = resources.GetString("Label1.Text")
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.SVPLC_Grid.My.Resources.Resources.Icone_svplcpro256
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(206, 43)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(198, 194)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'MenuConstruction
         '
-        Me.MenuConstruction.BackColor = System.Drawing.Color.DarkGray
-        Me.MenuConstruction.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EchelleTextbox, Me.EchelleLabel, Me.ProjectMenuItem})
+        Me.MenuConstruction.BackColor = System.Drawing.Color.DarkOrange
+        Me.MenuConstruction.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EchelleTextbox, Me.EchelleLabel, Me.ProjectMenuItem, Me.OutilsToolStripMenuItem})
         Me.MenuConstruction.Location = New System.Drawing.Point(0, 0)
         Me.MenuConstruction.Name = "MenuConstruction"
-        Me.MenuConstruction.Size = New System.Drawing.Size(626, 24)
+        Me.MenuConstruction.Size = New System.Drawing.Size(626, 27)
         Me.MenuConstruction.TabIndex = 1
         Me.MenuConstruction.Text = "MenuStrip1"
         '
@@ -713,24 +780,21 @@ Partial Class FormP
         Me.EchelleTextbox.Size = New System.Drawing.Size(100, 23)
         Me.EchelleTextbox.Text = "1"
         Me.EchelleTextbox.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.EchelleTextbox.Visible = False
         '
         'EchelleLabel
         '
         Me.EchelleLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.EchelleLabel.Name = "EchelleLabel"
-        Me.EchelleLabel.Size = New System.Drawing.Size(132, 20)
+        Me.EchelleLabel.Size = New System.Drawing.Size(132, 23)
         Me.EchelleLabel.Text = "Echelle du projet (m):"
-        Me.EchelleLabel.Visible = False
         '
         'ProjectMenuItem
         '
         Me.ProjectMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AjouterPhase, Me.SupprimerPhaseActive, Me.RenommerLaPhaseActiveToolStripMenuItem})
         Me.ProjectMenuItem.Name = "ProjectMenuItem"
         Me.ProjectMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProjectMenuItem.Size = New System.Drawing.Size(50, 20)
+        Me.ProjectMenuItem.Size = New System.Drawing.Size(50, 23)
         Me.ProjectMenuItem.Text = "Projet"
-        Me.ProjectMenuItem.Visible = False
         '
         'AjouterPhase
         '
@@ -753,6 +817,23 @@ Partial Class FormP
         Me.RenommerLaPhaseActiveToolStripMenuItem.Size = New System.Drawing.Size(254, 22)
         Me.RenommerLaPhaseActiveToolStripMenuItem.Text = "Renommer la phase active"
         '
+        'OutilsToolStripMenuItem
+        '
+        Me.OutilsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem})
+        Me.OutilsToolStripMenuItem.Name = "OutilsToolStripMenuItem"
+        Me.OutilsToolStripMenuItem.Size = New System.Drawing.Size(50, 23)
+        Me.OutilsToolStripMenuItem.Text = "Outils"
+        '
+        'GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem
+        '
+        Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem.Image = Global.SVPLC_Grid.My.Resources.Resources.power
+        Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem.Name = "GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDe" & _
+    "LaPhaseActiveToolStripMenuItem"
+        Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G), System.Windows.Forms.Keys)
+        Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem.Size = New System.Drawing.Size(699, 22)
+        Me.GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem.Text = "Générer une nouvelle phase optimisée à partir du partitionnement en parcelles et " & _
+    "des plantes de la phase active"
+        '
         'ImageListPlantes
         '
         Me.ImageListPlantes.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit
@@ -766,6 +847,10 @@ Partial Class FormP
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.Filter = "Fichiers SVPLCPro|*.svplcpro"
+        '
+        'ColumnSementier
+        '
+        Me.ColumnSementier.Text = "Sementier"
         '
         'FormP
         '
@@ -804,9 +889,12 @@ Partial Class FormP
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TabPageEntretien.ResumeLayout(False)
         Me.TableLayoutPanel4.ResumeLayout(False)
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.ToolstripMenu.ResumeLayout(False)
+        Me.ToolstripMenu.PerformLayout()
         Me.TabControlConstruction.ResumeLayout(False)
+        Me.TabPageBienvenue.ResumeLayout(False)
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuConstruction.ResumeLayout(False)
         Me.MenuConstruction.PerformLayout()
         Me.ResumeLayout(False)
@@ -849,7 +937,7 @@ Partial Class FormP
     Friend WithEvents ColumnSemis As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnRecolte As System.Windows.Forms.ColumnHeader
     Friend WithEvents ButtonAddPlante As System.Windows.Forms.Button
-    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents ToolstripMenu As System.Windows.Forms.MenuStrip
     Friend WithEvents FichierToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NouveauProjetToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EnregistrerLeProjetToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -872,5 +960,13 @@ Partial Class FormP
     Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ButtonADDEntretien As System.Windows.Forms.Button
     Friend WithEvents RenommerLaPhaseActiveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FaireUnDonToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TableLayoutPanel5 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents OutilsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GénérerUneNouvellePhaseOptimiséeÀPartirDuPartitionnementEnParcellesEtDesPlantesDeLaPhaseActiveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ColumnVariete As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnSementier As System.Windows.Forms.ColumnHeader
 
 End Class

@@ -1,8 +1,9 @@
 ﻿Public Class Plante
-    Private nam, fam, typ, viv, met, recolt As String
+    Private nam, fam, sem, var, typ, viv, met, recolt As String
     Sub New()
         MyBase.New()
         Me.Name = nam
+        Me.Variete = var
         Me.Famille = fam
         Me.Type = typ
         Me.Vivace = viv
@@ -15,6 +16,22 @@
         End Get
         Set(ByVal Value As String)
             nam = Value
+        End Set
+    End Property
+    Public Property Variete() As String
+        Get
+            Return var
+        End Get
+        Set(ByVal Value As String)
+            var = Value
+        End Set
+    End Property
+    Public Property Sementier() As String
+        Get
+            Return sem
+        End Get
+        Set(ByVal Value As String)
+            sem = Value
         End Set
     End Property
     Public Property Famille() As String

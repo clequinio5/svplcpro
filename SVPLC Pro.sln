@@ -13,6 +13,10 @@ Global
 		{D7171623-7DAD-46F8-848F-00923F459CF1}.Debug|x86.Build.0 = Debug|x86
 		{D7171623-7DAD-46F8-848F-00923F459CF1}.Release|x86.ActiveCfg = Release|x86
 		{D7171623-7DAD-46F8-848F-00923F459CF1}.Release|x86.Build.0 = Release|x86
+		{C9D97399-FDB7-4D59-AB81-5204DACEC5B6}.Debug|x86.Build.0 = Debug|x86
+		{C9D97399-FDB7-4D59-AB81-5204DACEC5B6}.Debug|x86.ActiveCfg = Debug|x86
+		{C9D97399-FDB7-4D59-AB81-5204DACEC5B6}.Release|x86.Build.0 = Release|x86
+		{C9D97399-FDB7-4D59-AB81-5204DACEC5B6}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

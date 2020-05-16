@@ -32,7 +32,7 @@ Public Class FormPlante
             End Select
             Dim miseterre As String = "De " & ComboBox1.Text & " à " & ComboBox2.Text
             Dim recolte As String = "De " & ComboBox3.Text & " à " & ComboBox4.Text
-            Dim str As String= TextBox1.Text & "|" & TextBox2.Text & "|" & TextBox3.Text & "|" & checkstate & "|" & miseterre & "|" & recolte
+            Dim str As String = TextBox1.Text & "|" & TextBox4.Text & "|" & TextBox5.Text & "|" & TextBox2.Text & "|" & TextBox3.Text & "|" & checkstate & "|" & miseterre & "|" & recolte
             lines.Add(str)
             File.WriteAllLines(PathPlantes, lines, Encoding.Default)
 
@@ -44,38 +44,40 @@ Public Class FormPlante
                 FormP.ImageListPlantes.Images.RemoveAt(key)
                 FormP.ImageListBDDPlantes.Images.RemoveAt(key)
 
-                File.Delete(pathe)
-                If PictureBox1.Tag IsNot Nothing Then
-                    File.Copy(PictureBox1.Tag, pathe)
-                Else
-                    My.Resources.Appareil_photo.Save(pathe)
+                If PictureBox1.Tag <> pathe Then
+                    File.Delete(pathe)
+                    If PictureBox1.Tag IsNot Nothing Then
+                        File.Copy(PictureBox1.Tag, pathe)
+                    Else
+                        My.Resources.Appareil_photo.Save(pathe)
+                    End If
                 End If
             Catch ex As Exception
                 MsgBox("Oups!Pour remplacer l'image, soyez sûr qu'elle n'est pas utilisée ailleurs par le logiciel", MsgBoxStyle.Exclamation, "Erreur traitement image")
             End Try
-            
+
             'SI RENOMME
-                Dim oldname As String
-                Dim newname As String
-                oldname = Label1.Tag
-                newname = TextBox1.Text
-                If oldname <> newname Then
-                    Dim fichier As String
-                    fichier = File.ReadAllText(PathAssociations, Encoding.Default)
-                    File.WriteAllText(PathAssociations, fichier.Replace(oldname & "|", newname & "|"), Encoding.Default)
+            Dim oldname As String
+            Dim newname As String
+            oldname = Label1.Tag
+            newname = TextBox1.Text
+            If oldname <> newname Then
+                Dim fichier As String
+                fichier = File.ReadAllText(PathAssociations, Encoding.Default)
+                File.WriteAllText(PathAssociations, fichier.Replace(oldname & "|", newname & "|"), Encoding.Default)
 
-                    fichier = File.ReadAllText(PathRotations, Encoding.Default)
-                    File.WriteAllText(PathRotations, fichier.Replace(oldname & "|", newname & "|"), Encoding.Default)
-                End If
-
-                Chargement_Images()
-            Chargement_Plantes()
-                Chargement_Associations()
-                Chargement_Rotations()
-
-                Me.Close()
-
+                fichier = File.ReadAllText(PathRotations, Encoding.Default)
+                File.WriteAllText(PathRotations, fichier.Replace(oldname & "|", newname & "|"), Encoding.Default)
             End If
+
+            Chargement_Images()
+            Chargement_Plantes()
+            Chargement_Associations()
+            Chargement_Rotations()
+
+            Me.Close()
+
+        End If
 
         If Me.Text = "Ajouter une plante" Then
             Dim lines As List(Of String) = File.ReadAllLines(PathPlantes, Encoding.Default).ToList
@@ -88,13 +90,12 @@ Public Class FormPlante
             End Select
             Dim miseterre As String = "De " & ComboBox1.Text & " à " & ComboBox2.Text
             Dim recolte As String = "De " & ComboBox3.Text & " à " & ComboBox4.Text
-            Dim str As String = TextBox1.Text & "|" & TextBox2.Text & "|" & TextBox3.Text & "|" & checkstate & "|" & miseterre & "|" & recolte
+            Dim str As String = TextBox1.Text & "|" & TextBox4.Text & "|" & TextBox5.Text & "|" & TextBox2.Text & "|" & TextBox3.Text & "|" & checkstate & "|" & miseterre & "|" & recolte
             lines.Add(str)
 
             File.WriteAllLines(PathPlantes, lines, Encoding.Default)
 
-            Dim pathe As String
-            pathe = PathImage & "\" & TextBox1.Text & Path.GetExtension(OpenFileDialog1.FileName)
+            Dim pathe As String = PathImage & "\" & TextBox1.Text & Path.GetExtension(OpenFileDialog1.FileName)
             If File.Exists(pathe) Then
                 File.Delete(pathe)
             End If
@@ -115,7 +116,4 @@ Public Class FormPlante
 
     End Sub
 
-    Private Sub FormPlante_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

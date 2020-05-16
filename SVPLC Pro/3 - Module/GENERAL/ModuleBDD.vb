@@ -115,6 +115,12 @@ Module ModuleBDD
             MsgBox("Erreur de chargement des rotations", MsgBoxStyle.Exclamation, "Erreur")
         End Try
     End Sub
+    Public Function SafeImageFromFile(path As String) As Image
+        Using fs As New FileStream(path, FileMode.Open, FileAccess.Read)
+            Dim img = Image.FromStream(fs)
+            Return img
+        End Using
+    End Function
     Public Sub Chargement_Images()
         'CHARGEMENT IMAGES
         Try
@@ -125,11 +131,18 @@ Module ModuleBDD
             Dim name As String
 
             For Each files As String In My.Computer.FileSystem.GetFiles(PathImage)
-                img = Image.FromFile(files)
+                img = SafeImageFromFile(files)
                 name = Path.GetFileNameWithoutExtension(files)
                 FormP.ImageListBDDPlantes.Images.Add(name, img)
                 FormP.ImageListPlantes.Images.Add(name, img)
             Next
+
+            Try
+                Dim DTG As DTGSPACE = FormP.TabControlConstruction.SelectedTab.Controls.Find("DTGridSPACE", True)(0)
+                DTG.Invalidate()
+            Catch ex As Exception
+            End Try
+           
 
         Catch ex As Exception
             MsgBox("Erreur de chargement des images!", MsgBoxStyle.Exclamation, "Erreur")
@@ -154,11 +167,13 @@ Module ModuleBDD
                 Dim pl As New Plante
                 With pl
                     .Name = tabsp(0)
-                    .Famille = tabsp(1)
-                    .Type = tabsp(2)
-                    .Vivace = tabsp(3)
-                    .Mise_en_Terre = tabsp(4)
-                    .Recolte = tabsp(5)
+                    .Variete = tabsp(1)
+                    .Sementier = tabsp(2)
+                    .Famille = tabsp(3)
+                    .Type = tabsp(4)
+                    .Vivace = tabsp(5)
+                    .Mise_en_Terre = tabsp(6)
+                    .Recolte = tabsp(7)
                 End With
                 item.Tag = pl
                 item.ImageKey = item.Text

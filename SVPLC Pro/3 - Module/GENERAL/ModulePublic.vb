@@ -10,4 +10,16 @@
         Return -1
     End Function
 
+    Public Function Factorielle(ByVal N As Long) As Long
+        If N = 0 Then
+            Return 0
+        End If
+        Dim i As Long
+        Dim result As Long = 1
+        For i = 1 To N
+            result = i * result
+        Next
+        Return result
+    End Function
+
 End Module

@@ -5,63 +5,50 @@
     Private pd, pg, ph, pb, pr As String
     Dim prc As Parcelle
 
-    ' Declares the property.
     Property Parcelle() As Parcelle
-        ' Sets the method for retrieving the value of your property.
         Get
             Return prc
         End Get
-        ' Sets the method for setting the value of your property.
         Set(ByVal Value As Parcelle)
             prc = Value
         End Set
     End Property
     Property PlanteDroite() As String
-        ' Sets the method for retrieving the value of your property.
         Get
             Return pd
         End Get
-        ' Sets the method for setting the value of your property.
         Set(ByVal Value As String)
             pd = Value
         End Set
     End Property
     Property PlanteGauche() As String
-        ' Sets the method for retrieving the value of your property.
         Get
             Return pg
         End Get
-        ' Sets the method for setting the value of your property.
         Set(ByVal Value As String)
             pg = Value
         End Set
     End Property
     Property PlanteHaut() As String
-        ' Sets the method for retrieving the value of your property.
         Get
             Return ph
         End Get
-        ' Sets the method for setting the value of your property.
         Set(ByVal Value As String)
             ph = Value
         End Set
     End Property
     Property PlanteBas() As String
-        ' Sets the method for retrieving the value of your property.
         Get
             Return pb
         End Get
-        ' Sets the method for setting the value of your property.
         Set(ByVal Value As String)
             pb = Value
         End Set
     End Property
     Property Rotation() As String
-        ' Sets the method for retrieving the value of your property.
         Get
             Return pr
         End Get
-        ' Sets the method for setting the value of your property.
         Set(ByVal Value As String)
             pr = Value
         End Set
@@ -77,8 +64,7 @@
 
         If Me.Tag <> "" Then
             'DESSINE LE LEGUME
-            Dim key As Integer
-            key = FormP.ImageListPlantes.Images.IndexOfKey(Me.Tag)
+            Dim key As Integer = FormP.ImageListPlantes.Images.IndexOfKey(Me.Tag)
             If key <> -1 Then
                 Dim img As Bitmap = FormP.ImageListPlantes.Images(key)
                 Dim srcRect As Rectangle = New Rectangle(0, 0, img.Width, img.Height)
@@ -196,9 +182,13 @@
 
     End Sub
     Protected Overrides Sub OnMouseEnter(ByVal rowIndex As Integer)
+        Me.DataGridView.SuspendLayout()
         Me.DataGridView.InvalidateCell(Me)
+        Me.DataGridView.ResumeLayout()
     End Sub
     Protected Overrides Sub OnMouseLeave(ByVal rowIndex As Integer)
+        Me.DataGridView.SuspendLayout()
         Me.DataGridView.InvalidateCell(Me)
+        Me.DataGridView.ResumeLayout()
     End Sub
 End Class
